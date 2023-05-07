@@ -4,7 +4,7 @@
 
 ### Description
 
-This repository has teaching materials for a hands-on **Introduction to metagenomics** with a focus on natural product research.
+This repository has teaching materials for a hands-on **metagenomics** workshop going from metagenomic assemblies to metagenome-assembled genomes (MAGs) to biosynthetic gene clusters (BGCs) and more. This workshop is taught by Lucas Paoli (ETHZ) and Serina Robinson (Eawag).
 
 ## Day 3 Schedule
 
@@ -21,11 +21,7 @@ This repository has teaching materials for a hands-on **Introduction to metageno
 | 17:00 - 18:00 | Apero and poster session | All |
 
 
-### Learning Objectives
-
-### Tasks
-
-I. Before arriving at the workshop
+### Before arriving at the workshop
 
 0. Familiarize yourself with [bash](https://astrobiomike.github.io/unix/unix-intro) and [conda](https://astrobiomike.github.io/unix/conda-intro)
 
@@ -41,8 +37,6 @@ I. Before arriving at the workshop
 -press ENTER <br> 
 
 </details>
-
-II. At the workshop (once connected to Cousteau)
 
 3. Setting up conda 
 
@@ -62,8 +56,6 @@ II. At the workshop (once connected to Cousteau)
 -```rm Miniconda3-latest-Linux-x86_64.sh<br>```
 -Install should take ~5min<br>
 
-</details>
-
 * Add conda channels
 ```
     conda config --add channels defaults
@@ -78,6 +70,30 @@ II. At the workshop (once connected to Cousteau)
     mamba install git
 ```
 
+* Set up three distinct conda environments for the three modules of the workshop as follows:
+```
+conda create -ny module-1
+conda activate module-1
+conda install metabat2
+conda install bwa
+Conda deactivate 
+```
+
+```
+conda create -ny module-2
+conda activate module-2
+```
+
+```
+conda create -yn module-3
+conda activate module-3
+mamba install antismash 
+download-antismash-databases
+```
+
+
+</details>
+
 4. Git clone the [applied-meta-omics-ethz-2023/metagenomics-workshop Github repo](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop)
 
 ```
@@ -85,4 +101,5 @@ II. At the workshop (once connected to Cousteau)
     git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
 ```
 
-5. Time to get started! Go to the [module 1 README](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1)
+
+6. Time to get started with [Module 1!](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) at the workshop.
