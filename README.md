@@ -28,13 +28,26 @@ I. Getting started
 * VPN introduction[https://unlimited.ethz.ch/display/itkb/VPN#VPN-HowtosetupVPN]
 
 2. Open a terminal and connect to Cousteau
+<details>
   <summary><i>Test</i></summary>
          <br>Test2<br>
              - Learn the theory behind clustering and how it is performed in Seurat<br>
              - Cluster cells and visualize them on the UMAP<br>
+</details
 
-3. Install [miniconda](https://docs.conda.io/en/main/miniconda.html)
+3. Install miniconda
+<details>
+<summary><i>Click for instructions:</I></summary>
+         <br>In your terminal type:<br>
 ```wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh```
+-```bash Miniconda3-latest-Linux-x86_64.sh```
+-press ENTER, scroll down, type in ‘yes’<br>
+-press ENTER<br>
+-type in yes<br>
+-close and reopen session (exit; ssh cousteau)<br>
+-rm Miniconda3-latest-Linux-x86_64.sh<br>
+-Install should take ~5min<br>
+</details
 
 4. 
 
