@@ -30,7 +30,7 @@ Now idea is to have more unstructured time allowing you to explore topics and to
 ## Custom analysis based on evolutionary principles
 - **[ARTS](http://arts.ziemertlab.com/)**: **A**ntibiotic **R**esistant **T**arget **S**eeker, a tool to help identify resistance genes within BGCs.
 - **[NaPDoS2](https://npdomainseeker.sdsc.edu/napdos2/napdos_home_v2.html)
-- **[EvoMining]**(https://github.com/nselem/EvoMining/wiki)**
+- **[EvoMining](https://github.com/nselem/EvoMining/wiki)**
 - **[AutoMLST](https://automlst.ziemertlab.com)**
 - **[Co-ED webserver](http://enzyme-analysis.org)** and **[Co-ED Jupyter notebook](https://github.com/tderond/CO-ED)** for co-occurrence of enzyme domain analysis
 
