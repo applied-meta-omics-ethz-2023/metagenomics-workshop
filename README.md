@@ -34,9 +34,12 @@ I. Before arriving at the workshop
 2. Open a terminal and connect to Cousteau (the ETH teaching server)
 <details>
 <i>Click for instructions:</I></summary>
+
 ```ssh yourusername@cousteau.ethz.ch```
--type your password
--hit enter
+
+-type your password<br> 
+-press ENTER <br> 
+
 </details>
 
 II. At the workshop (once connected to Cousteau)
@@ -45,22 +48,26 @@ II. At the workshop (once connected to Cousteau)
 <details>
 <summary><i>Click for instructions:</I></summary>
          <br>In your terminal type:<br>
+
 -```wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh```
+
 -```bash Miniconda3-latest-Linux-x86_64.sh```
+
 -press ENTER, scroll down, type in ‘yes’<br>
 -press ENTER<br>
 -type in yes<br>
 -close and reopen session (exit; ssh cousteau)<br>
 -rm Miniconda3-latest-Linux-x86_64.sh<br>
 -Install should take ~5min<br>
+
 </details>
 
 4. Add conda channels
 ```
     conda config --add channels defaults
+    conda config --add channels conda-forge    
     conda config --add channels bioconda
-    conda config --add channels conda-forge
-    conda config --set channel_priority strict
+    
 ```
 
 5. Create a conda environment
@@ -70,9 +77,17 @@ II. At the workshop (once connected to Cousteau)
     conda install metabat2
 ```
 
-6. Clone the [applied-meta-omics-ethz-2023/metagenomics-workshop Github repo](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop)
+6. Install mamba (faster, alternative conda client)
+```
+    conda install mamba
+    mamba install git
+```
+
+7. Git clone the [applied-meta-omics-ethz-2023/metagenomics-workshop Github repo](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop)
 
 ```
     conda install git
-
+    git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
 ```
+
+8. Install antiSMASH
