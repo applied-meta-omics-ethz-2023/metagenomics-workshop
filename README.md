@@ -42,7 +42,7 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 <details>
 <summary><i>Click for instructions:</I></summary>
-         <br>In your terminal type:<br>
+ <br>In your terminal type:<br>
 
 -```wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh```
 
@@ -58,41 +58,41 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 * Add conda channels
 ```
-    conda config --add channels defaults
-    conda config --add channels conda-forge    
-    conda config --add channels bioconda
-    
+conda config --add channels defaults
+conda config --add channels conda-forge
+conda config --add channels bioconda
+
 ```
 
 * Install mamba (faster, alternative client to conda)
 ```
-    conda install mamba
-    mamba install git
+conda install mamba
+mamba install git
 ```
 
 * Set up three distinct conda environments for the three modules of the workshop as follows:
 
 Module 1:<br>
 ```
-    conda create -ny module-1
-    conda activate module-1
-    conda install metabat2
-    conda install bwa
-    conda deactivate 
+conda create -ny module-1
+conda activate module-1
+conda install metabat2
+conda install bwa
+conda deactivate 
 ```
 
 Module 2:<br>
 ```
-    conda create -ny module-2
-    conda activate module-2
+conda create -ny module-2
+conda activate module-2
 ```
 
 Module 3:<br>
 ```
-    conda create -yn module-3
-    conda activate module-3
-    mamba install antismash 
-    download-antismash-databases
+conda create -yn module-3
+conda activate module-3
+mamba install antismash 
+download-antismash-databases
 ```
 
 
@@ -101,8 +101,8 @@ Module 3:<br>
 4. Git clone the [applied-meta-omics-ethz-2023/metagenomics-workshop Github repo](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop)
 
 ```
-    conda install git
-    git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
+conda install git
+git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
 
 ```
 
