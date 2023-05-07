@@ -29,7 +29,7 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 2. Open a terminal and connect to Cousteau (the ETH teaching server)
 <details>
-<i>Click for instructions:</I></summary>
+<summary><i>Click for instructions:</I></summary>
 
 ```ssh yourusername@cousteau.ethz.ch```
 
@@ -53,7 +53,7 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 -type in yes<br>
 -close and reopen session (exit; ssh cousteau)<br>
 
--```rm Miniconda3-latest-Linux-x86_64.sh<br>```
+-```rm Miniconda3-latest-Linux-x86_64.sh```<br>
 -Install should take ~5min<br>
 
 * Add conda channels
@@ -71,24 +71,28 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 ```
 
 * Set up three distinct conda environments for the three modules of the workshop as follows:
+
+Module 1:<br>
 ```
-conda create -ny module-1
-conda activate module-1
-conda install metabat2
-conda install bwa
-Conda deactivate 
+    conda create -ny module-1
+    conda activate module-1
+    conda install metabat2
+    conda install bwa
+    conda deactivate 
 ```
 
+Module 2:<br>
 ```
-conda create -ny module-2
-conda activate module-2
+    conda create -ny module-2
+    conda activate module-2
 ```
 
+Module 3:<br>
 ```
-conda create -yn module-3
-conda activate module-3
-mamba install antismash 
-download-antismash-databases
+    conda create -yn module-3
+    conda activate module-3
+    mamba install antismash 
+    download-antismash-databases
 ```
 
 
@@ -99,7 +103,8 @@ download-antismash-databases
 ```
     conda install git
     git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
+
 ```
 
 
-6. Time to get started with [Module 1!](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) at the workshop.
+5. If you're completed steps 0-4, you are ready for the workshop. In person we will get started with [Module 1!](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) 
