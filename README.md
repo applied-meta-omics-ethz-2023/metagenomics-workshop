@@ -24,23 +24,22 @@ This repository has teaching materials for a hands-on **Introduction to metageno
 
 I. Getting started
 
-1. Connect to the ETH biol-public VPN
-* VPN introduction[https://unlimited.ethz.ch/display/itkb/VPN#VPN-HowtosetupVPN]
+1. Connect to the [ETH biol-public VPN](https://unlimited.ethz.ch/display/itkb/VPN#VPN-HowtosetupVPN)
 
 2. Open a terminal and connect to Cousteau
 <details>
-  <summary><i>Test</i></summary>
-         <br>Test2<br>
-             - Learn the theory behind clustering and how it is performed in Seurat<br>
-             - Cluster cells and visualize them on the UMAP<br>
+<i>Click for instructions:</I></summary>
+```ssh yourusername@cousteau.ethz.ch```
+-type your password
+-hit enter
 </details
 
 3. Install miniconda
 <details>
 <summary><i>Click for instructions:</I></summary>
          <br>In your terminal type:<br>
-```wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh```
--```bash Miniconda3-latest-Linux-x86_64.sh```
+-``wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh```
+-``bash Miniconda3-latest-Linux-x86_64.sh``
 -press ENTER, scroll down, type in ‘yes’<br>
 -press ENTER<br>
 -type in yes<br>
@@ -49,15 +48,14 @@ I. Getting started
 -Install should take ~5min<br>
 </details
 
-4. 
+4. Add conda channels
+    conda config --add channels defaults
+    conda config --add channels bioconda
+    conda config --add channels conda-forge
+    conda config --set channel_priority strict
 
+5. Create a conda environment
+    conda create -yn module-1
+    conda activate module-1
+    conda install metabat2
 
-
-I. Please **study the contents** and **work through all the code** within the following lessons:
-   1. [Clustering](../lessons/07_SC_clustering_cells_SCT.md)
-      <details>
-       <summary><i>Click here for a preview of this lesson</i></summary>
-         <br>From the UMAP visualization of our data  we can see that the cells are positioned into groups. Our next task is to isolate clusters of cells that are most similar to one another based on gene expression. <br><br>In this lesson you will:<br>
-             - Learn the theory behind clustering and how it is performed in Seurat<br>
-             - Cluster cells and visualize them on the UMAP<br>
-        </details
