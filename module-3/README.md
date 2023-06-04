@@ -27,15 +27,14 @@ Now idea is to have more unstructured time allowing you to explore topics and to
 - **[GECCO](https://gecco.embl.de)**, alternative, *de novo* approach to find BGCs 
 - **[DeepBGC](https://github.com/Merck/deepbgc)** deep learning approach for BGC detection (more false positives)
 
-## Custom analysis based on evolutionary principles
+## Analysis using evolutionary principles
 - **[ARTS](http://arts.ziemertlab.com/)**: **A**ntibiotic **R**esistant **T**arget **S**eeker, a tool to help identify resistance genes within BGCs.
-- **[NaPDoS2](https://npdomainseeker.sdsc.edu/napdos2/napdos_home_v2.html)
+- **[NaPDoS2](https://npdomainseeker.sdsc.edu/napdos2/napdos_home_v2.html)**
 - **[EvoMining](https://github.com/nselem/EvoMining/wiki)**
 - **[AutoMLST](https://automlst.ziemertlab.com)**
 - **[Co-ED webserver](http://enzyme-analysis.org)** and **[Co-ED Jupyter notebook](https://github.com/tderond/CO-ED)** for co-occurrence of enzyme domain analysis
 
 ## Network analysis of BGCs
-
 - **[BiG-SLiCE](https://github.com/medema-group/bigslice)**
 - **[BiG-SCAPE and CORASON](https://bigscape-corason.secondarymetabolites.org/index.html)**
 
