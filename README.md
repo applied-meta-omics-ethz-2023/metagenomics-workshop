@@ -25,9 +25,17 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 0. Familiarize yourself with [bash](https://astrobiomike.github.io/unix/unix-intro) and [conda](https://astrobiomike.github.io/unix/conda-intro)
 
-1. Connect to the [ETH biol-public VPN](https://unlimited.ethz.ch/display/itkb/VPN#VPN-HowtosetupVPN)
+1. If you do not already have an ssh client as part of the operating system (e.g., if you have a Windows machine), download a third party software such as one of the following:
 
-2. Open a terminal and connect to Cousteau (the ETH teaching server)
+-[MobaXterm](https://mobaxterm.mobatek.net)
+-[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+-[Cygwin](https://www.cygwin.com)
+
+2. For file transfer on Windows, we recommend downloading [winscp](https://winscp.net/eng/download.php)
+
+### Getting started at the workshop
+
+3. Open your ssh client and connect to Cousteau (the ETH teaching server)
 <details>
 <summary><i>Click for instructions:</I></summary>
 
@@ -38,7 +46,7 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 </details>
 
-3. Setting up conda 
+4. Setting up conda 
 
 <details>
 <summary><i>Click for instructions:</I></summary>
@@ -98,7 +106,7 @@ download-antismash-databases
 
 </details>
 
-4. Git clone the [applied-meta-omics-ethz-2023/metagenomics-workshop Github repo](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop)
+5. Git clone the [applied-meta-omics-ethz-2023/metagenomics-workshop Github repo](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop)
 
 ```
 conda install git
@@ -107,4 +115,4 @@ git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.
 ```
 
 
-5. If you're completed steps 0-4, you are ready for the workshop. In person we will get started with [Module 1!](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) 
+6. If you're completed all the steps above, you are ready to go. We will get started with [Module 1!](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) 
