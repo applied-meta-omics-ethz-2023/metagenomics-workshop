@@ -27,9 +27,9 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 1. If you do not already have an ssh client as part of the operating system (e.g., if you have a Windows machine), download a third party software such as one of the following:
 
--[MobaXterm](https://mobaxterm.mobatek.net)
--[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
--[Cygwin](https://www.cygwin.com)
+-[MobaXterm](https://mobaxterm.mobatek.net)<br>
+-[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)<br>
+-[Cygwin](https://www.cygwin.com)<br>
 
 2. For file transfer on Windows, we recommend downloading [winscp](https://winscp.net/eng/download.php)
 
