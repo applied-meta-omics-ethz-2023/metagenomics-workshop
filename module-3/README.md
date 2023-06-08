@@ -29,13 +29,13 @@ Now idea is to have more unstructured time allowing you to explore topics and to
 
 ## Analysis using evolutionary principles
 - **[ARTS](http://arts.ziemertlab.com/)**: **A**ntibiotic **R**esistant **T**arget **S**eeker, a tool to help identify resistance genes within BGCs.
-- **[NaPDoS2](https://npdomainseeker.sdsc.edu/napdos2/napdos_home_v2.html)**
-- **[EvoMining](https://github.com/nselem/EvoMining/wiki)**
-- **[AutoMLST](https://automlst.ziemertlab.com)**
+- **[NaPDoS2](https://npdomainseeker.sdsc.edu/napdos2/napdos_home_v2.html)** classification of ketosynthase (KS) and condensation (C) domains 
+- **[EvoMining](https://github.com/nselem/EvoMining/wiki)** genome-mining and visualization approach for biosynthetic enzyme discovery that incorporates evolutionary principles
+- **[AutoMLST](https://automlst.ziemertlab.com)** automatic generation of a species phylogeny with reference organisms
 - **[Co-ED webserver](http://enzyme-analysis.org)** and **[Co-ED Jupyter notebook](https://github.com/tderond/CO-ED)** for co-occurrence of enzyme domain analysis
 
 ## Network analysis of BGCs
-- **[BiG-SLiCE](https://github.com/medema-group/bigslice)**
-- **[BiG-SCAPE and CORASON](https://bigscape-corason.secondarymetabolites.org/index.html)**
+- **[BiG-SLiCE](https://github.com/medema-group/bigslice)**  tool designed to cluster large numbers of BGCs
+- **[BiG-SCAPE and CORASON](https://bigscape-corason.secondarymetabolites.org/index.html)** construct BGC sequence similarity networks, group BGCs into gene cluster families, and exploring gene cluster diversity linked to enzyme phylogenies
 
 
