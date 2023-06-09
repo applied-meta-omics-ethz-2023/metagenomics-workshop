@@ -11,8 +11,8 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 | Time |  Topic  | Instructor
 |:-----------:|:----------:|:--------:|
 | 08:30 - 11:00 | [Module 1: assembly to bins](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) | Lucas & Serina |
-| 11:00 - 12:00 |  Seminar: Computational Tools for Genome Mining and Antibiotic Discovery | Nadine Ziemert |
-| 12:00 - 12:45 | Lunch | All |
+| 11:00 - 11:45 |  Seminar: Computational Tools for Genome Mining and Antibiotic Discovery | Nadine Ziemert |
+| 11:45 - 12:45 | Lunch | All |
 | 12:45 - 14:00 | Seminars by participants | All |
 | 14:00 - 14:15 | 15-min break | All |
 | 14:15 - 15:45 | [Module 2: bins to genomes](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-2) | Lucas & Serina |
