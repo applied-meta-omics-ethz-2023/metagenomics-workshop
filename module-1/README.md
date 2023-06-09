@@ -94,11 +94,9 @@ One thing you might notice is that this script wants a *sorted* bam file as an i
 
 </details>
 
-And now we should have everything we need to move forward with `metabat2`!
+And now we should have everything we need to move forward with `metabat2`! Well... actually, we could do what we just did with a single metagenomic samples with many more to look at the abundance of the contigs across a whole dataset, which is very useful for the binning step. The individual abundance files can be merge with a script called `merge_depths.pl` for instance. For this workshope, we have already done that for you and you just need to download that combined abundance file from `https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.depth.gz`.
 
-### download the full jgi script result
-
-### run metabat2
+### Running metabat2
 
 ```
 metabat2 -i ACIN21-1_SAMN05422137_METAG.assembly.fasta -a ACIN21-1_SAMN05422137_METAG.depth -o ACIN21-1_SAMN05422137_METAG-metabat2 --minContig 2000 --maxEdges 500 -x 1 --numThreads 12 --minClsSize 200000 --saveCls -v
