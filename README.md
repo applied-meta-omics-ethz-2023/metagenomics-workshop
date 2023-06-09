@@ -114,7 +114,6 @@ download-antismash-databases
 5. Git clone the [applied-meta-omics-ethz-2023/metagenomics-workshop Github repo](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop)
 
 ```
-conda install git
 git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
 ```
 
