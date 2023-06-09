@@ -96,11 +96,37 @@ One thing you might notice is that this script wants a *sorted* bam file as an i
 
 And now we should have everything we need to move forward with `metabat2`! Well... actually, we could do what we just did with a single metagenomic samples with many more to look at the abundance of the contigs across a whole dataset, which is very useful for the binning step. The individual abundance files can be merge with a script called `merge_depths.pl` for instance. For this workshope, we have already done that for you and you just need to download that combined abundance file from `https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.depth.gz`.
 
+<details>
+<summary><i>Click to display the command lines:</I></summary>
+  
+  ```
+  wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.depth.gz
+  ```
+
+</details>
+
+
 ### Running metabat2
 
-```
-metabat2 -i ACIN21-1_SAMN05422137_METAG.assembly.fasta -a ACIN21-1_SAMN05422137_METAG.depth -o ACIN21-1_SAMN05422137_METAG-metabat2 --minContig 2000 --maxEdges 500 -x 1 --numThreads 12 --minClsSize 200000 --saveCls -v
-```
+Let's start by having another look at the `metabat2` help. We should have everything we need, but let's think about the additional options. In particular, I recommend we:
+- use 6 threads
+- use a minimal contig length of 2kb
+- use a max number of edges of 500 (increases sensitivity)
+- use a minimum bin size of 500kb
+- save the clustering results
+
+This step should take a few minutes.
+
+<details>
+<summary><i>Click to display the command lines:</I></summary>
+  
+
+  ```
+  metabat2 -i ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz -a ACIN21-1_SAMN05422137_METAG.depth.gz -o ACIN21-1_SAMN05422137_METAG-metabat2 --minContig 2000 --maxEdges 500 --numThreads 6 --minClsSize 500000 --saveCls
+  ```
+
+</details>
+
 
 ### run checkM with the database already available from Chris
 
