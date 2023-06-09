@@ -80,6 +80,22 @@ We want to use `bwa index` to prepare our reference (the assembly) and then `bwa
 
 </details>
 
+Now that we have the alignment file, we want to generate the abundance file. For that, we can use a script that is shipped with `metabat2` appropriately named `jgi_summarize_bam_contig_depths`. Just type in the name of the script to prompt the help message.
+
+One thing you might notice is that this script wants a *sorted* bam file as an input. Here we can use `samtools sort` to do that job for us.
+
+<details>
+<summary><i>Click to display the command lines:</I></summary>
+  
+  ```
+  samtools sort -O bam mapping_file.sam > mapping_file.sorted.bam
+  jgi_summarize_bam_contig_depths --outputDepth abundance_file.txt mapping_file.sorted.bam
+  ```
+
+</details>
+
+And now we should have everything we need to move forward with `metabat2`!
+
 ### download the full jgi script result
 
 ### run metabat2
