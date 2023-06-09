@@ -16,7 +16,7 @@
 ```
 
 Now idea is to have more unstructured time allowing you to explore topics and tools that are most interesting to you. Some ideas and tools are below:
-# Resources and links
+# Additional resources and links
 
 ## Detection of biosynthetic gene clusters (BGCs)
 - **[antiSMASH](https://antismash.secondarymetabolites.org/#!/start)**: **anti**biotics and **S**econdary **M**etabolite **A**nalysis **S**hell, a bacterial biosynthetic gene cluster prediction and characterization tool
