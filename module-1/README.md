@@ -127,12 +127,15 @@ This step should take a few minutes.
   ```
   metabat2 -i ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz -a ACIN21-1_SAMN05422137_METAG.depth -o ACIN21-1_SAMN05422137_METAG-bins/ACIN21-1_SAMN05422137_METAG-metabat2 --minContig 2000 --maxEdges 500 --numThreads 6 --minClsSize 500000 --saveCls
   ```
-  
-  In case something went wrong, click here to download some results that you can move forward with
-  ```
-  wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG-bins.tar.gz
-  tar -xzf ACIN21-1_SAMN05422137_METAG-bins.tar.gz
-  ```
+
+</details>
+
+<summary><i>In case something went wrong, click here to download some results that you can move forward with/I></summary>
+
+```
+wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG-bins.tar.gz
+tar -xzf ACIN21-1_SAMN05422137_METAG-bins.tar.gz
+```
 
 </details>
 
