@@ -25,8 +25,8 @@ Start by (1) activating the conda environment for this module and (2) print the 
 First we will need to download some files, namely (1) the metagenomic assembly and (2) the metagenomic reads. Note that in the interest of time, these metagenomic reads have been quality controlled and subsampled. If you want to know more about metagenomic reads quality control, check out this [page](https://astrobiomike.github.io/genomics/where_to_start).
 
 These files can be downloaded directly from:
-- The assembly: https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz
-- The reads: https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz
+- The assembly: `https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz`
+- The reads: `https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz`
 
 To download these files directly on the server, you can use the command `wget`.
 
