@@ -8,7 +8,7 @@ You should already have everything set up by now, so let's make sure!
 Start by (1) activating the conda environment for this module and (2) print the help command of a tool called `metabat2`.
 
 <details>
-<summary><i>Click to display the command lines:</I></summary>
+<summary><i>Click to display the command lines</I></summary>
 
   ```
   conda activate module-1
@@ -29,7 +29,7 @@ These files can be downloaded directly from:
 To download these files directly on the server, you can use the command `wget`.
 
 <details>
-<summary><i>Click to display the command lines:</I></summary>
+<summary><i>Click to display the command lines</I></summary>
   
   ```
   wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz
@@ -59,7 +59,7 @@ To map the reads, we will use a alignement software called bwa. So let's start w
 We want to use `bwa index` to prepare our reference (the assembly) and then `bwa mem` the reads to that reference. Just type in those commands to access their help page.
 
 <details>
-<summary><i>Click to display the command lines:</I></summary>
+<summary><i>Click to display the command lines</I></summary>
   
   ```
   bwa index ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz
@@ -69,7 +69,7 @@ We want to use `bwa index` to prepare our reference (the assembly) and then `bwa
 </details>
 
 <details>
-<summary><i>Click here fore some advanced usage of bwa mem:</I></summary>
+<summary><i>Click here fore some advanced usage of bwa mem</I></summary>
   Here, the bwa mem command is combined combined with samtools calls and an in house script (sushicounter) to filter the alignment.
 
   ```
@@ -85,7 +85,7 @@ Now that we have the alignment file, we want to generate the abundance file. For
 One thing you might notice is that this script wants a *sorted* bam file as an input. Here we can use `samtools sort` to do that job for us.
 
 <details>
-<summary><i>Click to display the command lines:</I></summary>
+<summary><i>Click to display the command lines</I></summary>
   
   ```
   samtools sort -O bam mapping_file.sam > mapping_file.sorted.bam
@@ -97,7 +97,7 @@ One thing you might notice is that this script wants a *sorted* bam file as an i
 And now we should have everything we need to move forward with `metabat2`! Well... actually, we could do what we just did with a single metagenomic samples with many more to look at the abundance of the contigs across a whole dataset, which is very useful for the binning step. The individual abundance files can be merge with a script called `merge_depths.pl` for instance. For this workshope, we have already done that for you and you just need to download that combined abundance file from `https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.depth.gz`.
 
 <details>
-<summary><i>Click to display the command lines:</I></summary>
+<summary><i>Click to display the command lines</I></summary>
   
   ```
   wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.depth.gz
@@ -118,11 +118,17 @@ Let's start by having another look at the `metabat2` help. We should have everyt
 This step should take a few minutes.
 
 <details>
-<summary><i>Click to display the command lines:</I></summary>
+<summary><i>Click to display the command lines</I></summary>
   
 
   ```
   metabat2 -i ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz -a ACIN21-1_SAMN05422137_METAG.depth.gz -o ACIN21-1_SAMN05422137_METAG-metabat2 --minContig 2000 --maxEdges 500 --numThreads 6 --minClsSize 500000 --saveCls
+  ```
+  
+  In case something went wrong, click here to download some results that you can move forward with
+  ```
+  wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG-bins.tar.gz
+  tar -xzf ACIN21-1_SAMN05422137_METAG-bins.tar.gz
   ```
 
 </details>
