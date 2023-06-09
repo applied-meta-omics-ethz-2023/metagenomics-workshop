@@ -85,7 +85,7 @@ mamba install git
 
 Module 1:<br>
 ```
-conda create -ny module-1
+conda create -yn module-1
 conda activate module-1
 conda install metabat2
 conda install bwa
@@ -94,7 +94,7 @@ conda deactivate
 
 Module 2:<br>
 ```
-conda create -ny module-2
+conda create -yn module-2
 conda activate module-2
 conda install gtdbtk
 conda install checkm-genome
@@ -102,7 +102,7 @@ conda install checkm-genome
 
 Module 3:<br>
 ```
-conda create -ny module-3
+conda create -yn module-3
 conda activate module-3
 mamba install antismash 
 download-antismash-databases
