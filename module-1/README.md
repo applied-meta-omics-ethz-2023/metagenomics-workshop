@@ -1,21 +1,75 @@
 # In this first module, we will go from a metagenomic assembly to bins.
 
 
-## Set up the conda environment for this module
+## Checking the conda environment for this module
 
+You should already have everything set up by now, so let's make sure!
+
+Start by (1) activating the conda environment for this module and (2) print the help command of a tool called `metabat2`.
+
+<details>
+<summary><i>Click to display the command lines:</I></summary>
 ```
-conda create -ny module-1
 conda activate module-1
-conda install metabat2
-conda install bwa
---> add check
+metabat2 --help
 ```
+</details>
 
-## Module 1 step by step
+  
+## Download the metagenomic assembly and the metagenomic reads
 
-### Download assembly and subsampled processed reads
+First we will need to download some files, namely (1) the metagenomic assembly and (2) the metagenomic reads. Note that in the interest of time, these metagenomic reads have been quality controlled and subsampled. If you want to know more about metagenomic reads quality control, check out this [page](https://astrobiomike.github.io/genomics/where_to_start).
 
-### Map back the reads to the assembly and use the jgi script to generate profile [optional]
+These files can be downloaded directly from:
+- https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz
+- https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz
+
+To download these files directly on the server, you can use the command `wget`.
+
+<details>
+<summary><i>Click to display the command lines:</I></summary>
+```
+wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz
+wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz
+```
+</details>
+
+
+## Binning the metagenomic assembly
+
+Now that we have the data, we want to bin the metagenomic assemblies to reconstruct genomes. For that step, we will use the `metabat2` software. To know more about `metabat2`, you can have a look at:
+- [the repo](https://bitbucket.org/berkeleylab/metabat/src/master/)
+- [the paper](https://peerj.com/preprints/27522/)
+
+But really, the first thing to do when you want to use a new software is to look at at the help command (see above).
+
+One thing that you might have noticed is that `metabat2` takes as inputs a contig file (the assembly) and an abundance file (coverage of the contigs). We do have the contigs but not the abundance file, so let's use the reads and the assembly to produce this file!
+
+
+### Generating the abundance file
+
+Here, what we want to do is to (1) map the metagenomic reads to the assembly (to generate a sam file) and (2) use the jgi script to generate the abundance file.
+
+To map the reads, we will use a alignement software called bwa. So let's start with the `bwa`, which you can access by simply typing in `bwa` as a command.
+
+We want to use `bwa index` to prepare our reference (the assembly) and then `bwa mem` the reads to that reference. Just type in those commands to access their help page.
+
+<details>
+<summary><i>Click to display the command lines:</I></summary>
+```
+bwa index ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz
+bwa mem -t 4 ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz > mapping_file.sam
+```
+</details>
+
+<details>
+<summary><i>Click here fore some advanced usage of `bwa mem` combined with `samtools` and a in house script (`sushicounter`):</I></summary>
+```
+fasta="ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz"
+reads="ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz"
+bwa mem -a -t 4 $fasta $reads | samtools view -F 4 -h - | sushicounter filter -u -i 0.95 -c 0.8 -a 45 - - | samtools view -bh - | samtools sort -O bam -@ 4 -m 4G - > mapping_file.filtered.sorted.bam
+```
+</details>
 
 ### download the full jgi script result
 
