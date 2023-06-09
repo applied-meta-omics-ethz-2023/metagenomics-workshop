@@ -10,7 +10,7 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 | Time |  Topic  | Instructor
 |:-----------:|:----------:|:--------:|
-| 08:30 - 9:00 | [Module 0: setting up the computational environment](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main#getting-started-at-the-workshop) | Lucas & Serina |
+| 08:30 - 09:00 | [Module 0: setting up the computational environment](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main#getting-started-at-the-workshop) | Lucas & Serina |
 | 09:00 - 10:45 | [Module 1: assembly to bins](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) | Lucas & Serina |
 | 10:45 - 11:00 | 15-min break | All |
 | 11:00 - 11:45 |  Seminar: Computational Tools for Genome Mining and Antibiotic Discovery | Nadine Ziemert |
@@ -116,7 +116,6 @@ download-antismash-databases
 ```
 conda install git
 git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
-
 ```
 
 
