@@ -14,10 +14,8 @@
 Try running antiSMASH --help to check the available options
 ```
 antismash --help-showall 
+antismash test_cluster.gbk
 ```
-
-An explanation of hte options 
-
 2. Next try running antiSMASH on your MAGs. You cannot run jobs in parallel but you can open [screens](https://kb.iu.edu/d/acuy)
 ```
 antismash yourMAG.gbk
