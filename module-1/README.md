@@ -137,4 +137,6 @@ This step should take a few minutes.
 </details>
 
 
+### Exploring the binning results with Anvi'o
 
+Are you done? Is there some time and motivation left? Have a look [here](https://merenlab.org/2016/06/22/anvio-tutorial-v2/) and try to visualise the binning results on your laptop with Anvi'o!
