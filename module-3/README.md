@@ -29,6 +29,7 @@ If you are not familiar with antiSMASH output, here is an [explanation](https://
 
 4. Choose your own adventure: now the idea is to allow you to explore topics and tools that are most interesting to you. Some ideas and tools are below:
 # Additional resources and links
+Suggestions for additional tools to add welcome!
 
 ## Detection of biosynthetic gene clusters (BGCs)
 - **[antiSMASH](https://antismash.secondarymetabolites.org/#!/start)**: **anti**biotics and **S**econdary **M**etabolite **A**nalysis **S**hell, a bacterial biosynthetic gene cluster prediction and characterization tool
@@ -38,6 +39,7 @@ If you are not familiar with antiSMASH output, here is an [explanation](https://
 - **[MIBiG](https://mibig.secondarymetabolites.org/)**: **M**inimum **I**nformation about a **Bi**osynthetic **G**ene cluster repository, a large, curated repository of biosynthetic gene clusters with annotations and links to relevant publications and/or genomic data
 - **[GECCO](https://gecco.embl.de)**, alternative, *de novo* approach to find BGCs 
 - **[DeepBGC](https://github.com/Merck/deepbgc)** deep learning approach for BGC detection (more false positives)
+- **[BAGEL4](https://github.com/annejong/BAGEL4)** search DNA for bacteriocins and RiPPs 
 
 ## Analysis using evolutionary principles
 - **[ARTS](http://arts.ziemertlab.com/)**: **A**ntibiotic **R**esistant **T**arget **S**eeker, a tool to help identify resistance genes within BGCs.
