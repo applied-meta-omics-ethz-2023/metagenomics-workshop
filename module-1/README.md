@@ -9,10 +9,12 @@ Start by (1) activating the conda environment for this module and (2) print the 
 
 <details>
 <summary><i>Click to display the command lines:</I></summary>
-```
-conda activate module-1
-metabat2 --help
-```
+
+  ```
+  conda activate module-1
+  metabat2 --help
+  ```
+
 </details>
 
   
@@ -28,10 +30,12 @@ To download these files directly on the server, you can use the command `wget`.
 
 <details>
 <summary><i>Click to display the command lines:</I></summary>
-```
-wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz
-wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz
-```
+  
+  ```
+  wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz
+  wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz
+  ```
+  
 </details>
 
 
@@ -56,19 +60,23 @@ We want to use `bwa index` to prepare our reference (the assembly) and then `bwa
 
 <details>
 <summary><i>Click to display the command lines:</I></summary>
-```
-bwa index ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz
-bwa mem -t 4 ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz > mapping_file.sam
-```
+  
+  ```
+  bwa index ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz
+  bwa mem -t 4 ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz > mapping_file.sam
+  ```
+
 </details>
 
 <details>
 <summary><i>Click here fore some advanced usage of `bwa mem` combined with `samtools` and a in house script (`sushicounter`):</I></summary>
-```
-fasta="ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz"
-reads="ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz"
-bwa mem -a -t 4 $fasta $reads | samtools view -F 4 -h - | sushicounter filter -u -i 0.95 -c 0.8 -a 45 - - | samtools view -bh - | samtools sort -O bam -@ 4 -m 4G - > mapping_file.filtered.sorted.bam
-```
+
+  ```
+  fasta="ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz"
+  reads="ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz"
+  bwa mem -a -t 4 $fasta $reads | samtools view -F 4 -h - | sushicounter filter -u -i 0.95 -c 0.8 -a 45 - - | samtools view -bh - | samtools sort -O bam -@ 4 -m 4G - > mapping_file.filtered.sorted.bam
+  ```
+
 </details>
 
 ### download the full jgi script result
