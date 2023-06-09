@@ -130,6 +130,7 @@ This step should take a few minutes.
 
 </details>
 
+<details>
 <summary><i>In case something went wrong, click here to download some results that you can move forward with/I></summary>
 
 ```
