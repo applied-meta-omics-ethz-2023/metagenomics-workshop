@@ -88,6 +88,7 @@ Module 1:<br>
 conda create -yn module-1
 conda activate module-1
 conda install metabat2
+conda install samtools
 conda install bwa
 conda deactivate 
 ```
