@@ -25,13 +25,13 @@ If you'd like an extra challenge, you can write a bash script that will run anti
 3. Interpretation and visaulization of results
 If you are not familiar with antiSMASH output, here is an [explanation](https://docs.antismash.secondarymetabolites.org/understanding_output/)
 
-4. Choose your own adventure: now the idea is to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can be transferred to your personal computer using 
-scp:
 ```
-scp yourusername@cousteau.ethz.ch://nfs/nas22/fs2202/biol_micro_teaching/course_home/yourusername/ your_local_directory
+scp -r yourusername@cousteau.ethz.ch:antismash_output_dir your_local_dir
 ```
+You can visualize the results by opening index.html in any web browser. Anything look interesting? You can dig deeper, or choose to work with your own data trying out some tools in the next section.
 
-5. Some ideas and tools for getting started are below:
+4. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using 
+scp as shown above.
 
 # Additional resources and links
 Suggestions for additional tools to add welcome!
