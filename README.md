@@ -10,7 +10,8 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 | Time |  Topic  | Instructor
 |:-----------:|:----------:|:--------:|
-| 08:30 - 11:00 | [Module 1: assembly to bins](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) | Lucas & Serina |
+| 08:30 - 9:15 | [Module 0: setting up the computational environment](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main#getting-started-at-the-workshop) | Lucas & Serina |
+| 09:15 - 11:00 | [Module 1: assembly to bins](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) | Lucas & Serina |
 | 11:00 - 11:45 |  Seminar: Computational Tools for Genome Mining and Antibiotic Discovery | Nadine Ziemert |
 | 11:45 - 12:45 | Lunch | All |
 | 12:45 - 13:45 | Seminars by participants | All |
@@ -28,9 +29,9 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 1. If you do not already have an ssh client as part of the operating system (e.g., if you have a Windows machine), download a third party software such as one of the following:
 
--[MobaXterm](https://mobaxterm.mobatek.net)<br>
--[PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)<br>
--[Cygwin](https://www.cygwin.com)<br>
+- [MobaXterm](https://mobaxterm.mobatek.net)<br>
+- [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)<br>
+- [Cygwin](https://www.cygwin.com)<br>
 
 2. For file transfer on Windows, we recommend downloading [winscp](https://winscp.net/eng/download.php)
 
@@ -42,8 +43,8 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 ```ssh yourusername@cousteau.ethz.ch```
 
--type your password<br> 
--press ENTER <br> 
+- type your password<br> 
+- press ENTER <br> 
 
 </details>
 
@@ -53,17 +54,17 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 <summary><i>Click for instructions:</I></summary>
  <br>In your terminal type:<br>
 
--```wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh```
+- ```wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh```
 
--```bash Miniconda3-latest-Linux-x86_64.sh```
+- ```bash Miniconda3-latest-Linux-x86_64.sh```
 
--press ENTER, scroll down, type in ‘yes’<br>
--press ENTER<br>
--type in yes<br>
--close and reopen session (exit; ssh cousteau)<br>
+- press ENTER, scroll down, type in ‘yes’<br>
+- press ENTER<br>
+- type in yes<br>
+- close and reopen session (exit; ssh cousteau)<br>
 
--```rm Miniconda3-latest-Linux-x86_64.sh```<br>
--Install should take ~5min<br>
+- ```rm Miniconda3-latest-Linux-x86_64.sh```<br>
+- Install should take ~5min<br>
 
 * Add conda channels
 ```
@@ -94,11 +95,13 @@ Module 2:<br>
 ```
 conda create -ny module-2
 conda activate module-2
+conda install gtdbtk
+conda install checkm-genome
 ```
 
 Module 3:<br>
 ```
-conda create -yn module-3
+conda create -ny module-3
 conda activate module-3
 mamba install antismash 
 download-antismash-databases
