@@ -18,8 +18,8 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 | 14:00 - 15:45 | [Module 2: bins to genomes](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-2) | Lucas & Serina |
 | 15:45 - 16:00 | 15-min break | All |
 | 16:00 - 16:30 | Metagenome mining to tap microbial functional potential | Serina |
-| 16:30 - 18:30 | [Module 3: choose your own (natural product) adventure](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3) | Serina & Lucas |
-
+| 16:30 - 17:30* | [Module 3: choose your own (natural product) adventure](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3) | Serina & Lucas |
+*Flexible time to continue afterwards
 
 ### Before arriving at the workshop
 
