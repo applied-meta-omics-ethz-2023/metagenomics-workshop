@@ -11,11 +11,12 @@
 
 >The antibiotics and secondary metabolites analysis shell antiSMASH is a comprehensive pipeline for the automated mining of finished or draft genome data for the presence of secondary metabolite biosynthetic gene clusters. antiSMASH is an Open Source software written in Python.
 
-```
+
 *First try antiSMASH --help to check the available options
 ```
 antismash --help 
 ```
+
 *Then try running antiSMASH on your MAGs. You cannot run jobs in parallel but you can open multiple screens
 ```
 antismash yourMAG.gbk
