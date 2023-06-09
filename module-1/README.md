@@ -1,5 +1,7 @@
 # In this first module, we will go from a metagenomic assembly to bins.
 
+General philosophy: to get the most out of this workshop, try to write the commands yourselves from scratch and only use the solutions (in the hidden boxes) after reading through the help pages of the commands and trying it out yourself.
+
 
 ## Checking the conda environment for this module
 
