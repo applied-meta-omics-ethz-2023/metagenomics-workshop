@@ -5,24 +5,29 @@
 0. Activate the ```module-3``` environment
 ```conda activate module-3```
 
-1. As a start, we will all run antismash on our MAGs.
-
+1. As a start, we will check antiSMASH is working properly:
 *From the [antiSMASH User Manual](https://docs.antismash.secondarymetabolites.org/#):*
 
 >The antibiotics and secondary metabolites analysis shell antiSMASH is a comprehensive pipeline for the automated mining of finished or draft genome data for the presence of secondary metabolite biosynthetic gene clusters. antiSMASH is an Open Source software written in Python.
 
 
-*First try antiSMASH --help to check the available options
+Try running antiSMASH --help to check the available options
 ```
-antismash --help 
+antismash --help-showall 
 ```
 
-*Then try running antiSMASH on your MAGs. You cannot run jobs in parallel but you can open multiple screens
+An explanation of hte options 
+
+2. Next try running antiSMASH on your MAGs. You cannot run jobs in parallel but you can open [screens](https://kb.iu.edu/d/acuy)
 ```
 antismash yourMAG.gbk
 ```
+If you'd like an extra challenge, you can write a bash script that will run antiSMASH on all the MAGs.
 
-Now idea is to have more unstructured time allowing you to explore topics and tools that are most interesting to you. Some ideas and tools are below:
+3. Interpretation and visaulization of results
+If you are not familiar with antiSMASH output, here is an [explanation](https://docs.antismash.secondarymetabolites.org/understanding_output/)
+
+4. Choose your own adventure: now the idea is to allow you to explore topics and tools that are most interesting to you. Some ideas and tools are below:
 # Additional resources and links
 
 ## Detection of biosynthetic gene clusters (BGCs)
