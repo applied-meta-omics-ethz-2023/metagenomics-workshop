@@ -131,7 +131,7 @@ This step should take a few minutes.
 </details>
 
 <details>
-<summary><i>In case something went wrong, click here to download some results that you can move forward with/I></summary>
+<summary><i>In case something went wrong, click here to download some results that you can move forward with</I></summary>
 
 ```
 wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG-bins.tar.gz
