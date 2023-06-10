@@ -2,10 +2,13 @@
 
 ### In this third module, we will annotate the reconstructed MAGs to identify biosynthetic gene clusters, enzymes, antibiotic resistance factors of interest. 
 
-0. Activate the ```module-3``` environment
+0. Clean your conda cache
+```conda clean -a```
+
+1. Activate the ```module-3``` environment
 ```conda activate module-3```
 
-1. As a start, we will check antiSMASH is working properly:
+2. As a start, we will check antiSMASH is working properly:
 *From the [antiSMASH User Manual](https://docs.antismash.secondarymetabolites.org/#):*
 
 >The antibiotics and secondary metabolites analysis shell antiSMASH is a comprehensive pipeline for the automated mining of finished or draft genome data for the presence of secondary metabolite biosynthetic gene clusters. antiSMASH is an Open Source software written in Python.
@@ -16,13 +19,13 @@ Try running antiSMASH --help to check the available options
 antismash --help-showall 
 antismash test_cluster.gbk
 ```
-2. Next try running antiSMASH on your MAGs. You cannot run jobs in parallel but you can open [screens](https://kb.iu.edu/d/acuy)
+3. Next try running antiSMASH on your MAGs. You cannot run jobs in parallel but you can open [screens](https://kb.iu.edu/d/acuy)
 ```
 antismash yourMAG.gbk
 ```
 If you'd like an extra challenge, you can write a bash script that will run antiSMASH on all the MAGs.
 
-3. Interpretation and visaulization of results
+4. Interpretation and visaulization of results
 If you are not familiar with antiSMASH output, here is an [explanation](https://docs.antismash.secondarymetabolites.org/understanding_output/)
 
 ```
@@ -30,7 +33,7 @@ scp -r yourusername@cousteau.ethz.ch:antismash_output_dir your_local_dir
 ```
 You can visualize the results by opening index.html in any web browser. Anything look interesting? You can dig deeper, or choose to work with your own data trying out some tools in the next section.
 
-4. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using 
+5. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using 
 scp as shown above.
 
 # Additional resources and links
