@@ -33,9 +33,23 @@ scp -r yourusername@cousteau.ethz.ch:antismash_output_dir your_local_dir
 ```
 You can visualize the results by opening index.html in any web browser. Anything look interesting? You can dig deeper, or choose to work with your own data trying out some tools in the next section.
 
-5.
+5. If you want to try to cluster antiSMASH results, we can use a tool developed in the Ziemert lab, **[Clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)** to clustering BGCs into groups.
 
-7. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using scp as shown above.
+6. Install clust-o-matic
+```
+git clone https://github.com/Helmholtz-HIPS/clustomatic_source
+conda install -c bioconda diamond
+cd clustomatic_source
+pip3 install -r requirements.txt
+```
+
+7. Run clust-o-matic on the pre-processed Eremiobacterota results from antiSMASH.
+*NB: In order to convert the antiSMASH output you can use available tools or your favorite langauge Genbank to FASTA format and modify the FASTA headers to fit the following format:
+```
+>NAME_GENENAME
+```
+
+8. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using scp as shown above.
 
 # Additional resources and links
 Suggestions for additional tools to add welcome!
