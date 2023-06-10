@@ -76,4 +76,8 @@ Suggestions for additional tools to add welcome!
 - **[BiG-SLiCE](https://github.com/medema-group/bigslice)**  tool designed to cluster large numbers of BGCs
 - **[BiG-SCAPE and CORASON](https://bigscape-corason.secondarymetabolites.org/index.html)** construct BGC sequence similarity networks, group BGCs into gene cluster families, and exploring gene cluster diversity linked to enzyme phylogenies
 
+## Integration with other 'omics datasets 
+- **[BiG-MAP](https://github.com/medema-group/BiG-MAP)** a bioinformatic tool to profile abundance and expression levels of gene clusters across metagenomic and metatranscriptomic data
+- **[NPLinker](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008920)** Software framework to link genomic and metabolomic data.
+
 
