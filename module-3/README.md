@@ -33,8 +33,9 @@ scp -r yourusername@cousteau.ethz.ch:antismash_output_dir your_local_dir
 ```
 You can visualize the results by opening index.html in any web browser. Anything look interesting? You can dig deeper, or choose to work with your own data trying out some tools in the next section.
 
-5. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using 
-scp as shown above.
+5.
+
+7. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using scp as shown above.
 
 # Additional resources and links
 Suggestions for additional tools to add welcome!
@@ -46,7 +47,7 @@ Suggestions for additional tools to add welcome!
 - **[plantiSMASH](http://plantismash.secondarymetabolites.org/)**: similar to antiSMASH, but specifically built for plant genomes
 - **[MIBiG](https://mibig.secondarymetabolites.org/)**: **M**inimum **I**nformation about a **Bi**osynthetic **G**ene cluster repository, a large, curated repository of biosynthetic gene clusters with annotations and links to relevant publications and/or genomic data
 - **[GECCO](https://gecco.embl.de)**, alternative, *de novo* approach to find BGCs 
-- **[DeepBGC](https://github.com/Merck/deepbgc)** deep learning approach for BGC detection (more false positives)
+- **[DeepBGC](https://github.com/Merck/deepbgc)** deep learning approach for BGC detection
 - **[BAGEL4](https://github.com/annejong/BAGEL4)** search DNA for bacteriocins and RiPPs 
 
 ## Analysis using evolutionary principles
@@ -57,6 +58,7 @@ Suggestions for additional tools to add welcome!
 - **[Co-ED webserver](http://enzyme-analysis.org)** and **[Co-ED Jupyter notebook](https://github.com/tderond/CO-ED)** for co-occurrence of enzyme domain analysis
 
 ## Network analysis of BGCs
+- **[Clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)** clustering BGCs into groups
 - **[BiG-SLiCE](https://github.com/medema-group/bigslice)**  tool designed to cluster large numbers of BGCs
 - **[BiG-SCAPE and CORASON](https://bigscape-corason.secondarymetabolites.org/index.html)** construct BGC sequence similarity networks, group BGCs into gene cluster families, and exploring gene cluster diversity linked to enzyme phylogenies
 
