@@ -43,10 +43,10 @@ cd clustomatic_source
 pip3 install -r requirements.txt
 ```
 
-7. Run clust-o-matic on the pre-processed Eremiobacterota results from antiSMASH.
+7. Run clust-o-matic on the pre-processed Eremiobacterota results from antiSMASH. <br>
 **Note:** In order to convert the antiSMASH output you can use available tools or your favorite langauge Genbank to FASTA format and modify the FASTA headers to fit the following format:
 ```
->NAME_GENENAME
+>CLUSTERNAME_GENENAME
 ```
 
 8. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using scp as shown above.
