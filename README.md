@@ -99,6 +99,9 @@ conda create -yn module-2
 conda activate module-2
 conda install gtdbtk
 conda install checkm-genome
+# To finish setting up CheckM, please run the following to set up the database:
+export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm
+echo "export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm" >> .bashrc
 ```
 
 Module 3:<br>
