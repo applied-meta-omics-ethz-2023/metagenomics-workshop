@@ -109,7 +109,7 @@ And now we should have everything we need to move forward with `metabat2`! Well.
 </details>
 
 
-### Running metabat2
+### Running metabat2 with abundance correlation
 
 Let's start by having another look at the `metabat2` help. We should have everything we need, but let's think about the additional options. In particular, I recommend we:
 - use 6 threads
