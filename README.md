@@ -26,7 +26,7 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 ### Before arriving at the workshop
 
-0. Familiarize yourself with [bash](https://astrobiomike.github.io/unix/unix-intro) and [conda](https://astrobiomike.github.io/unix/conda-intro)
+0. Familiarize yourself with unix ([here](https://astrobiomike.github.io/unix/unix-intro) and/or [here](https://sunagawalab.ethz.ch/share/teaching/bioinformatics_praktikum/index.html)) and [conda](https://astrobiomike.github.io/unix/conda-intro)
 
 1. If you do not already have an ssh client as part of the operating system (e.g., if you have a Windows machine), download a third party software such as one of the following:
 
