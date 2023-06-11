@@ -19,14 +19,14 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 | 13:45 - 14:00 | 15-min break | All |
 | 14:00 - 15:45 | [Module 2: bins to genomes](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-2) | Lucas & Serina |
 | 15:45 - 16:00 | 15-min break | All |
-| 16:00 - 16:30 | Metagenome mining to tap microbial functional potential | Serina |
+| 16:00 - 16:30 | Seminar: Metagenome mining to tap microbial functional potential | Serina |
 | 16:30 - 17:30* | [Module 3: choose your own (natural product) adventure](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3) | Serina & Lucas |
 
 *Flexible time to continue afterwards or on Friday in the Open Workshop Session
 
 ### Before arriving at the workshop
 
-0. Familiarize yourself with [bash](https://astrobiomike.github.io/unix/unix-intro) and [conda](https://astrobiomike.github.io/unix/conda-intro)
+0. Familiarize yourself with unix ([here](https://astrobiomike.github.io/unix/unix-intro) and/or [here](https://sunagawalab.ethz.ch/share/teaching/bioinformatics_praktikum/index.html)) and [conda](https://astrobiomike.github.io/unix/conda-intro)
 
 1. If you do not already have an ssh client as part of the operating system (e.g., if you have a Windows machine), download a third party software such as one of the following:
 
@@ -85,24 +85,28 @@ mamba install git
 
 Module 1:<br>
 ```
-conda create -ny module-1
+conda create -yn module-1
 conda activate module-1
 conda install metabat2
+conda install samtools
 conda install bwa
 conda deactivate 
 ```
 
 Module 2:<br>
 ```
-conda create -ny module-2
+conda create -yn module-2
 conda activate module-2
 conda install gtdbtk
 conda install checkm-genome
+# To finish setting up CheckM, please run the following to set up the database:
+export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm
+echo "export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm" >> .bashrc
 ```
 
 Module 3:<br>
 ```
-conda create -ny module-3
+conda create -yn module-3
 conda activate module-3
 mamba install antismash 
 download-antismash-databases
