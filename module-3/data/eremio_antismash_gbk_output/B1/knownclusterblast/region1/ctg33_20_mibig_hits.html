@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ATI34080.1</td>
+              <td>methylcrotonoyl-CoA_carboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002284/1">BGC0002284</a></td>
+              <td>Other</td>
+              <td>55.0</td>
+              <td>95.7</td>
+              <td>539.0</td>
+              <td>1.23e-188</td>
+          </tr>
+    
+          <tr>
+              <td>ABS74196.1</td>
+              <td>YngE</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001095/1">BGC0001095</a></td>
+              <td>NRP</td>
+              <td>39.0</td>
+              <td>81.2</td>
+              <td>292.0</td>
+              <td>1.59e-92</td>
+          </tr>
+    
+          <tr>
+              <td>AAQ08909.1</td>
+              <td>putative_acyl_CoA_decarboxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000224/1">BGC0000224</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>34.0</td>
+              <td>94.0</td>
+              <td>247.0</td>
+              <td>5.22e-75</td>
+          </tr>
+    
+          <tr>
+              <td>AAK57534.1</td>
+              <td>PgaI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000262/1">BGC0000262</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>34.0</td>
+              <td>94.4</td>
+              <td>246.0</td>
+              <td>1.1e-74</td>
+          </tr>
+    
+          <tr>
+              <td>ADE34513.1</td>
+              <td>ssfE</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000269/1">BGC0000269</a></td>
+              <td>Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>33.0</td>
+              <td>95.0</td>
+              <td>241.0</td>
+              <td>1.06e-72</td>
+          </tr>
+    
+          <tr>
+              <td>AAL15589.1</td>
+              <td>Sim11</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000270/1">BGC0000270</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>94.0</td>
+              <td>239.0</td>
+              <td>5.58e-72</td>
+          </tr>
+    
+          <tr>
+              <td>AAK06793.1</td>
+              <td>putative_decarboxylase_SimA12</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001072/1">BGC0001072</a></td>
+              <td>Saccharide+Polyketide:Modular type I polyketide+Polyketide:Type II polyketide+Other:Aminocoumarin</td>
+              <td>32.0</td>
+              <td>94.0</td>
+              <td>239.0</td>
+              <td>5.58e-72</td>
+          </tr>
+    
+          <tr>
+              <td>QBF51801.1</td>
+              <td>carboxyl-transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001856/1">BGC0001856</a></td>
+              <td>Polyketide:Modular type I polyketide</td>
+              <td>33.0</td>
+              <td>94.0</td>
+              <td>236.0</td>
+              <td>8.39e-71</td>
+          </tr>
+    
+          <tr>
+              <td>ADB02850.1</td>
+              <td>AzicG</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000202/1">BGC0000202</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>94.0</td>
+              <td>234.0</td>
+              <td>2.48e-70</td>
+          </tr>
+    
+          <tr>
+              <td>AMX23325.1</td>
+              <td>putative_propionyl-CoA_carboxylase_beta_chain_5</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001500/1">BGC0001500</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>91.0</td>
+              <td>233.0</td>
+              <td>1.48e-69</td>
+          </tr>
+    
+          <tr>
+              <td>PPQ62300.1</td>
+              <td>methylmalonyl-CoA_carboxyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002016/1">BGC0002016</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>97.0</td>
+              <td>233.0</td>
+              <td>1.49e-69</td>
+          </tr>
+    
+          <tr>
+              <td>AEE65461.1</td>
+              <td>carboxyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000223/1">BGC0000223</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>33.0</td>
+              <td>92.9</td>
+              <td>233.0</td>
+              <td>1.66e-69</td>
+          </tr>
+    
+          <tr>
+              <td>QDJ74289.1</td>
+              <td>methylmalonyl-CoA_carboxyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002109/1">BGC0002109</a></td>
+              <td>NRP</td>
+              <td>33.0</td>
+              <td>94.2</td>
+              <td>227.0</td>
+              <td>2.12e-67</td>
+          </tr>
+    
+          <tr>
+              <td>EHK80154.1</td>
+              <td>acetyl/propionyl-CoA_carboxylase,_carboxyltransferase_subunit</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001447/1">BGC0001447</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>95.0</td>
+              <td>227.0</td>
+              <td>2.99e-67</td>
+          </tr>
+    
+          <tr>
+              <td>CAG14973.1</td>
+              <td>acetyl-CoA_carboxylase_complex,_beta-chain</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000253/1">BGC0000253</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>32.0</td>
+              <td>95.5</td>
+              <td>224.0</td>
+              <td>1.93e-66</td>
+          </tr>
+    
+          <tr>
+              <td>AYU66266.1</td>
+              <td>TjhA6</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002461/1">BGC0002461</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>96.8</td>
+              <td>216.0</td>
+              <td>6.89e-63</td>
+          </tr>
+    
+          <tr>
+              <td>OJF16262.1</td>
+              <td>propionyl-CoA_carboxylase_subunit_beta</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001491/1">BGC0001491</a></td>
+              <td>Polyketide</td>
+              <td>32.0</td>
+              <td>81.0</td>
+              <td>200.0</td>
+              <td>9.11e-58</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

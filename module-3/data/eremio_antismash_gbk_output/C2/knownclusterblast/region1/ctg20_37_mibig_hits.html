@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QIJ55907.1</td>
+              <td>3_beta-hydroxysteroid_dehydrogenase/delta_5--&gt;4-isomerase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002449/1">BGC0002449</a></td>
+              <td>Other</td>
+              <td>32.0</td>
+              <td>92.0</td>
+              <td>158.0</td>
+              <td>1.31e-44</td>
+          </tr>
+    
+          <tr>
+              <td>ABF89140.1</td>
+              <td>NAD_dependent_epimerase/dehydratase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000871/1">BGC0000871</a></td>
+              <td>Other:Nucleoside</td>
+              <td>31.0</td>
+              <td>91.5</td>
+              <td>129.0</td>
+              <td>2.41e-34</td>
+          </tr>
+    
+          <tr>
+              <td>CAA16184.1</td>
+              <td>oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001063/1">BGC0001063</a></td>
+              <td>NRP+Polyketide</td>
+              <td>31.0</td>
+              <td>97.7</td>
+              <td>104.0</td>
+              <td>4.05e-25</td>
+          </tr>
+    
+          <tr>
+              <td>AHF22855.1</td>
+              <td>MarK</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000091/1">BGC0000091</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>94.3</td>
+              <td>94.0</td>
+              <td>3.13e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AIT38301.1</td>
+              <td>LstD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000382/1">BGC0000382</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>99.7</td>
+              <td>89.0</td>
+              <td>4.87e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ABF87343.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000871/1">BGC0000871</a></td>
+              <td>Other:Nucleoside</td>
+              <td>28.0</td>
+              <td>96.9</td>
+              <td>75.0</td>
+              <td>8.1e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AAM12919.1</td>
+              <td>MupF</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000182/1">BGC0000182</a></td>
+              <td>Polyketide:Iterative type I polyketide+Polyketide:Trans-AT type I polyketide</td>
+              <td>28.0</td>
+              <td>95.7</td>
+              <td>74.0</td>
+              <td>2.92e-14</td>
+          </tr>
+    
+          <tr>
+              <td>ATV95636.1</td>
+              <td>NAD-dependent_epimerase/dehydratase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001503/1">BGC0001503</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>73.9</td>
+              <td>74.0</td>
+              <td>3.41e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AEA29644.1</td>
+              <td>putative_nonribosomal_peptide_synthetase_and_kinurenine_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000409/1">BGC0000409</a></td>
+              <td>NRP</td>
+              <td>31.0</td>
+              <td>55.1</td>
+              <td>66.0</td>
+              <td>3.75e-11</td>
+          </tr>
+    
+          <tr>
+              <td>AEW98148.1</td>
+              <td>UDP-glucose_4-epimerase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002642/1">BGC0002642</a></td>
+              <td>Alkaloid</td>
+              <td>31.0</td>
+              <td>52.6</td>
+              <td>63.0</td>
+              <td>1.1e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ATP76246.1</td>
+              <td>SpuB</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001748/1">BGC0001748</a></td>
+              <td>NRP+Polyketide</td>
+              <td>24.0</td>
+              <td>82.1</td>
+              <td>61.0</td>
+              <td>1.21e-09</td>
+          </tr>
+    
+          <tr>
+              <td>ATY72525.1</td>
+              <td>non-ribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001574/1">BGC0001574</a></td>
+              <td>NRP</td>
+              <td>28.0</td>
+              <td>57.1</td>
+              <td>59.0</td>
+              <td>4.53e-09</td>
+          </tr>
+    
+          <tr>
+              <td>QRK05501.1</td>
+              <td>myxochelin_non-ribosomal_peptide_synthetase_MxcG</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002324/1">BGC0002324</a></td>
+              <td>NRP+Polyketide</td>
+              <td>23.0</td>
+              <td>109.1</td>
+              <td>56.0</td>
+              <td>5.78e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ABF87167.1</td>
+              <td>non-ribosomal_peptide_synthase_MxcG</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002492/1">BGC0002492</a></td>
+              <td>NRP</td>
+              <td>25.0</td>
+              <td>70.2</td>
+              <td>53.0</td>
+              <td>4.15e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AOE23579.1</td>
+              <td>FoxBIII</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001598/1">BGC0001598</a></td>
+              <td>NRP+Polyketide</td>
+              <td>25.0</td>
+              <td>67.9</td>
+              <td>52.0</td>
+              <td>5.08e-07</td>
+          </tr>
+    
+          <tr>
+              <td>EOY45602.1</td>
+              <td>Adenylation_and_reductase_domains_containing_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001168/1">BGC0001168</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>54.5</td>
+              <td>52.0</td>
+              <td>5.14e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ABW71853.1</td>
+              <td>nonribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000303/1">BGC0000303</a></td>
+              <td>NRP</td>
+              <td>26.0</td>
+              <td>107.1</td>
+              <td>51.0</td>
+              <td>1.69e-06</td>
+          </tr>
+    
+          <tr>
+              <td>WP_020993844.1</td>
+              <td>non-ribosomal_peptide_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001575/1">BGC0001575</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>52.8</td>
+              <td>49.0</td>
+              <td>7.31e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AAG31130.1</td>
+              <td>MxcG</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001345/1">BGC0001345</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>82.7</td>
+              <td>49.0</td>
+              <td>9.07e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ADI71470.1</td>
+              <td>putative_gamma-glutamyltranspeptidase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000203/1">BGC0000203</a></td>
+              <td>Polyketide</td>
+              <td>35.0</td>
+              <td>88.5</td>
+              <td>236.0</td>
+              <td>1.37e-69</td>
+          </tr>
+    
+          <tr>
+              <td>EED49422.1</td>
+              <td>gamma_glutamyl_transpeptidase,_putative</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000627/1">BGC0000627</a></td>
+              <td>RiPP:Dikaritin</td>
+              <td>32.0</td>
+              <td>91.4</td>
+              <td>233.0</td>
+              <td>1.18e-68</td>
+          </tr>
+    
+          <tr>
+              <td>AEA29634.1</td>
+              <td>Por11</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000409/1">BGC0000409</a></td>
+              <td>NRP</td>
+              <td>29.0</td>
+              <td>103.0</td>
+              <td>168.0</td>
+              <td>8.94e-45</td>
+          </tr>
+    
+          <tr>
+              <td>AIL50153.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000213/1">BGC0000213</a></td>
+              <td>Polyketide:Type II polyketide</td>
+              <td>27.0</td>
+              <td>81.7</td>
+              <td>107.0</td>
+              <td>1.97e-24</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

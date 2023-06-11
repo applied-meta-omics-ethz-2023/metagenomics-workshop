@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CZF84004.1</td>
+              <td>RimK-like_ATP-grasp_domain_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002382/1">BGC0002382</a></td>
+              <td>RiPP</td>
+              <td>44.0</td>
+              <td>97.9</td>
+              <td>272.0</td>
+              <td>5.99e-90</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ16123.1</td>
+              <td>ATP_grasp_ligase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000593/1">BGC0000593</a></td>
+              <td>RiPP:Microviridin</td>
+              <td>44.0</td>
+              <td>99.7</td>
+              <td>268.0</td>
+              <td>1.7e-88</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ16118.1</td>
+              <td>ATP_grasp_ligase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000592/1">BGC0000592</a></td>
+              <td>RiPP:Microviridin</td>
+              <td>44.0</td>
+              <td>99.7</td>
+              <td>268.0</td>
+              <td>2.41e-88</td>
+          </tr>
+    
+          <tr>
+              <td>KAB0239820.1</td>
+              <td>MvdD_family_ATP-grasp_ribosomal_peptide_maturase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002380/1">BGC0002380</a></td>
+              <td>RiPP</td>
+              <td>43.0</td>
+              <td>99.4</td>
+              <td>268.0</td>
+              <td>2.41e-88</td>
+          </tr>
+    
+          <tr>
+              <td>BAA81784.1</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000591/1">BGC0000591</a></td>
+              <td>RiPP:Microviridin</td>
+              <td>47.0</td>
+              <td>70.0</td>
+              <td>217.0</td>
+              <td>1.85e-69</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ16122.1</td>
+              <td>ATP_grasp_ligase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000593/1">BGC0000593</a></td>
+              <td>RiPP:Microviridin</td>
+              <td>38.0</td>
+              <td>99.7</td>
+              <td>208.0</td>
+              <td>5.17e-65</td>
+          </tr>
+    
+          <tr>
+              <td>KAB0239819.1</td>
+              <td>MvdC_family_ATP-grasp_ribosomal_peptide_maturase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002380/1">BGC0002380</a></td>
+              <td>RiPP</td>
+              <td>38.0</td>
+              <td>99.7</td>
+              <td>207.0</td>
+              <td>2.05e-64</td>
+          </tr>
+    
+          <tr>
+              <td>CAQ16117.1</td>
+              <td>ATP_grasp_ligase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000592/1">BGC0000592</a></td>
+              <td>RiPP:Microviridin</td>
+              <td>38.0</td>
+              <td>99.7</td>
+              <td>205.0</td>
+              <td>7.9e-64</td>
+          </tr>
+    
+          <tr>
+              <td>WP_012408791.1</td>
+              <td>MvdC_family_ATP-grasp_ribosomal_peptide_maturase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002049/1">BGC0002049</a></td>
+              <td>RiPP:Microviridin</td>
+              <td>36.0</td>
+              <td>99.1</td>
+              <td>195.0</td>
+              <td>6.95e-60</td>
+          </tr>
+    
+          <tr>
+              <td>MBU7585866.1</td>
+              <td>MvdC_family_ATP-grasp_ribosomal_peptide_maturase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002626/1">BGC0002626</a></td>
+              <td>RiPP</td>
+              <td>35.0</td>
+              <td>99.4</td>
+              <td>186.0</td>
+              <td>3.58e-56</td>
+          </tr>
+    
+          <tr>
+              <td>ACC54549.1</td>
+              <td>MvdC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000594/1">BGC0000594</a></td>
+              <td>RiPP</td>
+              <td>34.0</td>
+              <td>97.9</td>
+              <td>183.0</td>
+              <td>2.45e-55</td>
+          </tr>
+    
+          <tr>
+              <td>BAP34760.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000078/1">BGC0000078</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>98.8</td>
+              <td>115.0</td>
+              <td>2.44e-29</td>
+          </tr>
+    
+          <tr>
+              <td>CAI59994.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000700/1">BGC0000700</a></td>
+              <td>Saccharide</td>
+              <td>29.0</td>
+              <td>102.1</td>
+              <td>98.0</td>
+              <td>4.8e-23</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

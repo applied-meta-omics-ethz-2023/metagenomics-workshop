@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QMX85612.1</td>
+              <td>SapE</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002510/1">BGC0002510</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>85.3</td>
+              <td>77.0</td>
+              <td>7.15e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AMK51276.1</td>
+              <td>Hex19</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001376/1">BGC0001376</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>84.8</td>
+              <td>75.0</td>
+              <td>6.69e-16</td>
+          </tr>
+    
+          <tr>
+              <td>QRG35020.1</td>
+              <td>3-oxoacyl-[acyl-carrier-protein]_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002378/1">BGC0002378</a></td>
+              <td>NRP</td>
+              <td>30.0</td>
+              <td>86.2</td>
+              <td>74.0</td>
+              <td>9.67e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ACZ87059.1</td>
+              <td>NAD_dependent_epimerase/dehydratase_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002732/1">BGC0002732</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>84.8</td>
+              <td>74.0</td>
+              <td>1.28e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AWH12904.1</td>
+              <td>KR_domain-containing_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001784/1">BGC0001784</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>74.6</td>
+              <td>73.0</td>
+              <td>6.07e-15</td>
+          </tr>
+    
+          <tr>
+              <td>AMK92578.1</td>
+              <td>oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001377/1">BGC0001377</a></td>
+              <td>Polyketide</td>
+              <td>39.0</td>
+              <td>52.7</td>
+              <td>62.0</td>
+              <td>3.16e-11</td>
+          </tr>
+    
+          <tr>
+              <td>UMP03510.1</td>
+              <td>NmvD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002649/1">BGC0002649</a></td>
+              <td>NRP+Polyketide</td>
+              <td>28.0</td>
+              <td>85.3</td>
+              <td>61.0</td>
+              <td>6.2e-11</td>
+          </tr>
+    
+          <tr>
+              <td>QTA30590.1</td>
+              <td>short_chain_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002143/1">BGC0002143</a></td>
+              <td>Polyketide</td>
+              <td>28.0</td>
+              <td>81.2</td>
+              <td>56.0</td>
+              <td>3.68e-09</td>
+          </tr>
+    
+          <tr>
+              <td>WP_099049898.1</td>
+              <td>SDR_family_NAD(P)-dependent_oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002002/1">BGC0002002</a></td>
+              <td>NRP</td>
+              <td>27.0</td>
+              <td>89.7</td>
+              <td>54.0</td>
+              <td>2.8e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ACY06294.1</td>
+              <td>short-chain_dehydrogenase/reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001042/1">BGC0001042</a></td>
+              <td>NRP+Polyketide</td>
+              <td>27.0</td>
+              <td>85.7</td>
+              <td>53.0</td>
+              <td>3.27e-08</td>
+          </tr>
+    
+          <tr>
+              <td>CAA74346.1</td>
+              <td>oxidoreductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000507/1">BGC0000507</a></td>
+              <td>RiPP:Lanthipeptide</td>
+              <td>22.0</td>
+              <td>85.7</td>
+              <td>48.0</td>
+              <td>1.8e-06</td>
+          </tr>
+    
+          <tr>
+              <td>CCE31576.1</td>
+              <td>probable_tetrahydroxynaphthalene_reductase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001886/1">BGC0001886</a></td>
+              <td>Polyketide</td>
+              <td>24.0</td>
+              <td>95.5</td>
+              <td>47.0</td>
+              <td>6.48e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

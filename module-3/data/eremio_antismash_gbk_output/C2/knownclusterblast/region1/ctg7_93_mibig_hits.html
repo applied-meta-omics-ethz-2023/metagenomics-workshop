@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ARU81128.1</td>
+              <td>CylN</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001566/1">BGC0001566</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>102.9</td>
+              <td>225.0</td>
+              <td>5.31e-69</td>
+          </tr>
+    
+          <tr>
+              <td>AKV71850.1</td>
+              <td>glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001525/1">BGC0001525</a></td>
+              <td>Other</td>
+              <td>31.0</td>
+              <td>99.0</td>
+              <td>207.0</td>
+              <td>2.44e-62</td>
+          </tr>
+    
+          <tr>
+              <td>AOH72615.1</td>
+              <td>glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001526/1">BGC0001526</a></td>
+              <td>Other</td>
+              <td>31.0</td>
+              <td>94.7</td>
+              <td>182.0</td>
+              <td>6.96e-53</td>
+          </tr>
+    
+          <tr>
+              <td>AKV71851.1</td>
+              <td>glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001525/1">BGC0001525</a></td>
+              <td>Other</td>
+              <td>29.0</td>
+              <td>100.2</td>
+              <td>172.0</td>
+              <td>6.25e-49</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ73140.1</td>
+              <td>zeaxanthin_glucosyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000641/1">BGC0000641</a></td>
+              <td>Terpene</td>
+              <td>27.0</td>
+              <td>99.8</td>
+              <td>136.0</td>
+              <td>1.48e-35</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ73147.1</td>
+              <td>zeaxanthin_glucosyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000642/1">BGC0000642</a></td>
+              <td>Terpene</td>
+              <td>27.0</td>
+              <td>102.2</td>
+              <td>134.0</td>
+              <td>1.09e-34</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ73128.1</td>
+              <td>zeaxanthin_glucosyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000639/1">BGC0000639</a></td>
+              <td>Terpene</td>
+              <td>27.0</td>
+              <td>104.3</td>
+              <td>133.0</td>
+              <td>1.96e-34</td>
+          </tr>
+    
+          <tr>
+              <td>QEO74987.1</td>
+              <td>omn12</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002078/1">BGC0002078</a></td>
+              <td>NRP:Cyclic depsipeptide</td>
+              <td>27.0</td>
+              <td>97.1</td>
+              <td>104.0</td>
+              <td>2.45e-24</td>
+          </tr>
+    
+          <tr>
+              <td>QWF78558.1</td>
+              <td>Demethyllactenocin_mycarosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002142/1">BGC0002142</a></td>
+              <td>Polyketide</td>
+              <td>25.0</td>
+              <td>98.8</td>
+              <td>103.0</td>
+              <td>3.58e-24</td>
+          </tr>
+    
+          <tr>
+              <td>QEO75081.1</td>
+              <td>glycosyltransferase,_MGT_family</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002079/1">BGC0002079</a></td>
+              <td>NRP:Cyclic depsipeptide</td>
+              <td>27.0</td>
+              <td>97.1</td>
+              <td>99.0</td>
+              <td>1.83e-22</td>
+          </tr>
+    
+          <tr>
+              <td>AJO72740.1</td>
+              <td>MGT_family_glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001381/1">BGC0001381</a></td>
+              <td>Polyketide</td>
+              <td>26.0</td>
+              <td>100.5</td>
+              <td>95.0</td>
+              <td>5.92e-21</td>
+          </tr>
+    
+          <tr>
+              <td>MBV7329457.1</td>
+              <td>glycosyl_transferase_family_1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002131/1">BGC0002131</a></td>
+              <td>Polyketide+NRP:Glycopeptide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>25.0</td>
+              <td>101.4</td>
+              <td>93.0</td>
+              <td>2.12e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AZF85926.1</td>
+              <td>glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001963/1">BGC0001963</a></td>
+              <td>NRP+Polyketide</td>
+              <td>27.0</td>
+              <td>50.8</td>
+              <td>75.0</td>
+              <td>9.62e-15</td>
+          </tr>
+    
+          <tr>
+              <td>QBK46622.1</td>
+              <td>HrsD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001960/1">BGC0001960</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>42.2</td>
+              <td>67.0</td>
+              <td>8.05e-12</td>
+          </tr>
+    
+          <tr>
+              <td>OWA25227.1</td>
+              <td>C-glycosyltransferase_SaqGT5</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001438/1">BGC0001438</a></td>
+              <td>Polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>27.0</td>
+              <td>76.4</td>
+              <td>52.0</td>
+              <td>8.15e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

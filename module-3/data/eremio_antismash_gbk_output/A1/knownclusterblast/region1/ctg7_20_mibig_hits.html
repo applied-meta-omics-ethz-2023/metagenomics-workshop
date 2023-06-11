@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ctg1_orf13</td>
+              <td></td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001457/1">BGC0001457</a></td>
+              <td>NRP</td>
+              <td>52.0</td>
+              <td>95.0</td>
+              <td>204.0</td>
+              <td>1.57e-66</td>
+          </tr>
+    
+          <tr>
+              <td>AEW95642.1</td>
+              <td>ATP-dependent_Clp_protease_proteolytic_subunit</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002697/1">BGC0002697</a></td>
+              <td>NRP+Polyketide</td>
+              <td>49.0</td>
+              <td>95.5</td>
+              <td>197.0</td>
+              <td>7.8e-64</td>
+          </tr>
+    
+          <tr>
+              <td>OKJ61993.1</td>
+              <td>Clp_protease</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002147/1">BGC0002147</a></td>
+              <td>NRP</td>
+              <td>45.0</td>
+              <td>95.0</td>
+              <td>186.0</td>
+              <td>2.41e-59</td>
+          </tr>
+    
+          <tr>
+              <td>AEW95641.1</td>
+              <td>ATP-dependent_Clp_protease_proteolytic_subunit_1</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002697/1">BGC0002697</a></td>
+              <td>NRP+Polyketide</td>
+              <td>51.0</td>
+              <td>87.4</td>
+              <td>176.0</td>
+              <td>8.07e-56</td>
+          </tr>
+    
+          <tr>
+              <td>OKJ62368.1</td>
+              <td>Clp_protease_ClpP</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002147/1">BGC0002147</a></td>
+              <td>NRP</td>
+              <td>48.0</td>
+              <td>87.9</td>
+              <td>171.0</td>
+              <td>8.65e-54</td>
+          </tr>
+    
+          <tr>
+              <td>QED88063.1</td>
+              <td>ClpPADEP</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001967/1">BGC0001967</a></td>
+              <td>NRP+Polyketide</td>
+              <td>44.0</td>
+              <td>85.9</td>
+              <td>150.0</td>
+              <td>1.14e-45</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

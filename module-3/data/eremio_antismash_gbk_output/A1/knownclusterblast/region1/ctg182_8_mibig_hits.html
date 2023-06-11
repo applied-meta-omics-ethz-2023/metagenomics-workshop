@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ACI11300.1</td>
+              <td>ABC_transporter,_permease_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001684/1">BGC0001684</a></td>
+              <td>Other</td>
+              <td>33.0</td>
+              <td>97.3</td>
+              <td>197.0</td>
+              <td>1.37e-59</td>
+          </tr>
+    
+          <tr>
+              <td>AAY59069.1</td>
+              <td>inner_membrane_permease_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000128/1">BGC0000128</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>97.1</td>
+              <td>193.0</td>
+              <td>6.82e-58</td>
+          </tr>
+    
+          <tr>
+              <td>AAX56376.1</td>
+              <td>PltN</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000127/1">BGC0000127</a></td>
+              <td>Polyketide</td>
+              <td>33.0</td>
+              <td>97.3</td>
+              <td>191.0</td>
+              <td>2.66e-57</td>
+          </tr>
+    
+          <tr>
+              <td>AAX56375.1</td>
+              <td>PltK</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000127/1">BGC0000127</a></td>
+              <td>Polyketide</td>
+              <td>36.0</td>
+              <td>90.7</td>
+              <td>184.0</td>
+              <td>3.05e-54</td>
+          </tr>
+    
+          <tr>
+              <td>AAY59068.1</td>
+              <td>inner_membrane_permease_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000128/1">BGC0000128</a></td>
+              <td>Polyketide</td>
+              <td>35.0</td>
+              <td>92.0</td>
+              <td>170.0</td>
+              <td>5.21e-49</td>
+          </tr>
+    
+          <tr>
+              <td>AFP87530.1</td>
+              <td>ABC_transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001159/1">BGC0001159</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide</td>
+              <td>29.0</td>
+              <td>48.3</td>
+              <td>57.0</td>
+              <td>4.22e-09</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

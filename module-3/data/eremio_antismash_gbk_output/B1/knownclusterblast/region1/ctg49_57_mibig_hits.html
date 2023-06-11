@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ABD31456.1</td>
+              <td>Siderophore_Transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000944/1">BGC0000944</a></td>
+              <td>Other:Non-NRP siderophore</td>
+              <td>27.0</td>
+              <td>81.8</td>
+              <td>140.0</td>
+              <td>2.49e-35</td>
+          </tr>
+    
+          <tr>
+              <td>ABD31458.1</td>
+              <td>L-ornithine_Racemase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000944/1">BGC0000944</a></td>
+              <td>Other:Non-NRP siderophore</td>
+              <td>27.0</td>
+              <td>93.4</td>
+              <td>138.0</td>
+              <td>1.89e-34</td>
+          </tr>
+    
+          <tr>
+              <td>CAG44662.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002681/1">BGC0002681</a></td>
+              <td>Other</td>
+              <td>25.0</td>
+              <td>84.9</td>
+              <td>129.0</td>
+              <td>2.19e-31</td>
+          </tr>
+    
+          <tr>
+              <td>AFO89685.1</td>
+              <td>putative_siderophore_biosynthesis_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002694/1">BGC0002694</a></td>
+              <td>Other</td>
+              <td>29.0</td>
+              <td>58.9</td>
+              <td>79.0</td>
+              <td>5.89e-15</td>
+          </tr>
+    
+          <tr>
+              <td>TCC25653.1</td>
+              <td>siderophore_synthetase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002692/1">BGC0002692</a></td>
+              <td>Other</td>
+              <td>26.0</td>
+              <td>66.9</td>
+              <td>77.0</td>
+              <td>1.61e-14</td>
+          </tr>
+    
+          <tr>
+              <td>ACB01063.1</td>
+              <td>Siderophore_biosynthesis_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002470/1">BGC0002470</a></td>
+              <td>Other</td>
+              <td>24.0</td>
+              <td>63.0</td>
+              <td>64.0</td>
+              <td>1.83e-10</td>
+          </tr>
+    
+          <tr>
+              <td>CAM86882.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002471/1">BGC0002471</a></td>
+              <td>Other</td>
+              <td>21.0</td>
+              <td>57.8</td>
+              <td>63.0</td>
+              <td>5.56e-10</td>
+          </tr>
+    
+          <tr>
+              <td>SQF72447.1</td>
+              <td>Siderophore_staphylobactin_biosynthesis_protein_SbnC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000943/1">BGC0000943</a></td>
+              <td>Other</td>
+              <td>23.0</td>
+              <td>54.3</td>
+              <td>56.0</td>
+              <td>1.06e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AAP25873.1</td>
+              <td>petrobactin_biosynthesis_protein_AsbA</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000942/1">BGC0000942</a></td>
+              <td>Other</td>
+              <td>24.0</td>
+              <td>61.3</td>
+              <td>56.0</td>
+              <td>1.07e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

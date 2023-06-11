@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AAL57057.1</td>
+              <td>CpsIaI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000740/1">BGC0000740</a></td>
+              <td>Saccharide</td>
+              <td>32.0</td>
+              <td>72.0</td>
+              <td>82.0</td>
+              <td>1.16e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AAL56379.1</td>
+              <td>CpsI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000746/1">BGC0000746</a></td>
+              <td>Saccharide</td>
+              <td>32.0</td>
+              <td>72.0</td>
+              <td>82.0</td>
+              <td>1.16e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AAL56386.1</td>
+              <td>CpsI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000747/1">BGC0000747</a></td>
+              <td>Saccharide</td>
+              <td>32.0</td>
+              <td>72.0</td>
+              <td>82.0</td>
+              <td>1.16e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AAL56393.1</td>
+              <td>CpsI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000748/1">BGC0000748</a></td>
+              <td>Saccharide</td>
+              <td>32.0</td>
+              <td>72.0</td>
+              <td>82.0</td>
+              <td>1.16e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AAL57076.1</td>
+              <td>CpsI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000741/1">BGC0000741</a></td>
+              <td>Saccharide</td>
+              <td>32.0</td>
+              <td>72.8</td>
+              <td>81.0</td>
+              <td>1.56e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AAL56365.1</td>
+              <td>CpsI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000744/1">BGC0000744</a></td>
+              <td>Saccharide</td>
+              <td>32.0</td>
+              <td>72.8</td>
+              <td>81.0</td>
+              <td>1.56e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AAL56372.1</td>
+              <td>CpsI</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000745/1">BGC0000745</a></td>
+              <td>Saccharide</td>
+              <td>32.0</td>
+              <td>72.8</td>
+              <td>81.0</td>
+              <td>1.56e-17</td>
+          </tr>
+    
+          <tr>
+              <td>ABM21409.1</td>
+              <td>glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000766/1">BGC0000766</a></td>
+              <td>Saccharide</td>
+              <td>36.0</td>
+              <td>38.3</td>
+              <td>79.0</td>
+              <td>1.76e-16</td>
+          </tr>
+    
+          <tr>
+              <td>QQZ01598.1</td>
+              <td>glycosyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002498/1">BGC0002498</a></td>
+              <td>Other</td>
+              <td>25.0</td>
+              <td>81.6</td>
+              <td>76.0</td>
+              <td>6.1e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AAB94868.1</td>
+              <td>unknown</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000868/1">BGC0000868</a></td>
+              <td>Other</td>
+              <td>27.0</td>
+              <td>82.0</td>
+              <td>76.0</td>
+              <td>8.03e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ABK27319.1</td>
+              <td>WbtD</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000790/1">BGC0000790</a></td>
+              <td>Saccharide</td>
+              <td>35.0</td>
+              <td>38.7</td>
+              <td>70.0</td>
+              <td>1.39e-13</td>
+          </tr>
+    
+          <tr>
+              <td>AAV34525.1</td>
+              <td>glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000788/1">BGC0000788</a></td>
+              <td>Saccharide</td>
+              <td>25.0</td>
+              <td>77.0</td>
+              <td>67.0</td>
+              <td>7.17e-13</td>
+          </tr>
+    
+          <tr>
+              <td>BAG50488.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000780/1">BGC0000780</a></td>
+              <td>Saccharide</td>
+              <td>35.0</td>
+              <td>42.1</td>
+              <td>66.0</td>
+              <td>3.02e-12</td>
+          </tr>
+    
+          <tr>
+              <td>AAN32985.1</td>
+              <td>BarK</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000962/1">BGC0000962</a></td>
+              <td>NRP+Polyketide:Modular type I polyketide</td>
+              <td>28.0</td>
+              <td>73.9</td>
+              <td>66.0</td>
+              <td>4.5e-12</td>
+          </tr>
+    
+          <tr>
+              <td>ACO05916.1</td>
+              <td>CpsF</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000763/1">BGC0000763</a></td>
+              <td>Saccharide</td>
+              <td>33.0</td>
+              <td>37.2</td>
+              <td>64.0</td>
+              <td>7.67e-12</td>
+          </tr>
+    
+          <tr>
+              <td>ABB29900.1</td>
+              <td>WfaM</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000789/1">BGC0000789</a></td>
+              <td>Saccharide</td>
+              <td>32.0</td>
+              <td>40.2</td>
+              <td>64.0</td>
+              <td>8.24e-12</td>
+          </tr>
+    
+          <tr>
+              <td>ABX51882.1</td>
+              <td>glycosyl_transferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000791/1">BGC0000791</a></td>
+              <td>Saccharide</td>
+              <td>30.0</td>
+              <td>42.5</td>
+              <td>61.0</td>
+              <td>1.73e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AAS77491.1</td>
+              <td>Cps12B</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000751/1">BGC0000751</a></td>
+              <td>Saccharide</td>
+              <td>34.0</td>
+              <td>40.6</td>
+              <td>61.0</td>
+              <td>3.45e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AAT06397.1</td>
+              <td>Cps6E</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000752/1">BGC0000752</a></td>
+              <td>Saccharide</td>
+              <td>28.0</td>
+              <td>42.5</td>
+              <td>60.0</td>
+              <td>4.18e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AMP46605.1</td>
+              <td>putative_glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001387/1">BGC0001387</a></td>
+              <td>Other</td>
+              <td>29.0</td>
+              <td>73.6</td>
+              <td>59.0</td>
+              <td>6.1e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ADG29291.1</td>
+              <td>putative_family_2_glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000796/1">BGC0000796</a></td>
+              <td>Saccharide</td>
+              <td>23.0</td>
+              <td>84.3</td>
+              <td>57.0</td>
+              <td>5.2e-09</td>
+          </tr>
+    
+          <tr>
+              <td>ACY25522.1</td>
+              <td>CcbB</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000757/1">BGC0000757</a></td>
+              <td>Saccharide</td>
+              <td>24.0</td>
+              <td>71.3</td>
+              <td>56.0</td>
+              <td>1.24e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ACY25517.1</td>
+              <td>CcbB</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000756/1">BGC0000756</a></td>
+              <td>Saccharide</td>
+              <td>24.0</td>
+              <td>71.3</td>
+              <td>54.0</td>
+              <td>3.03e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ALI93241.1</td>
+              <td>glycosyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001380/1">BGC0001380</a></td>
+              <td>Saccharide</td>
+              <td>27.0</td>
+              <td>78.5</td>
+              <td>53.0</td>
+              <td>1.06e-07</td>
+          </tr>
+    
+          <tr>
+              <td>AMD57692.1</td>
+              <td>succinoglycan_biosynthesis_protein_exow</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001765/1">BGC0001765</a></td>
+              <td>Saccharide</td>
+              <td>28.0</td>
+              <td>77.0</td>
+              <td>52.0</td>
+              <td>1.86e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

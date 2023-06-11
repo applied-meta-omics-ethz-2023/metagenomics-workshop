@@ -1,0 +1,161 @@
+ClusterBlast scores for TARA_SAMEA2623054_METAG-scaffold_332
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg31_15	14193	15084	+		
+ctg31_16	15070	16018	-		
+ctg31_17	16017	17691	-		
+ctg31_18	17683	18361	-		
+ctg31_19	18407	19694	-		
+ctg31_20	19733	20561	+		
+ctg31_21	20562	21060	+		
+ctg31_22	21086	22034	+		
+ctg31_23	22044	22389	+		
+ctg31_24	22447	23152	+		
+ctg31_25	23178	23301	-		
+ctg31_26	23319	25116	+		
+ctg31_27	25078	25888	-		
+ctg31_28	25963	26167	-		
+ctg31_29	26191	28267	-		
+ctg31_30	28367	28835	-		
+ctg31_31	28855	29995	+		
+ctg31_32	30069	30180	-		
+ctg31_33	30231	30486	-		
+ctg31_34	30544	31690	-		
+ctg31_35	31769	33527	-		
+ctg31_36	33528	36384	-		
+ctg31_37	36600	37983	-		
+ctg31_38	38183	38657	+		
+ctg31_39	38653	38962	-		
+ctg31_40	38989	39079	-		
+ctg31_41	39075	39450	-		
+ctg31_42	39446	39677	-		
+ctg31_43	39843	40443	-		
+ctg31_44	40453	40606	-		
+ctg31_45	40993	41176	-		
+ctg31_46	41296	41647	-		
+ctg31_47	41746	43828	+		
+ctg31_48	43902	44358	+		
+ctg31_49	44432	45140	+		
+ctg31_50	45084	45732	+		
+ctg31_51	45853	47050	+		
+ctg31_52	47092	48235	+		
+ctg31_53	48412	48529	-		
+ctg31_54	48525	48789	-		
+ctg31_55	49002	49149	+		
+ctg31_56	49283	51899	+		
+ctg31_57	51988	52732	+		
+ctg31_58	52715	53303	+		
+ctg31_59	53261	54719	-		
+
+
+Significant hits: 
+1. BGC0001090	bacillomycin D
+2. BGC0001098	iturin
+3. BGC0000774	lipopolysaccharide
+4. BGC0002284	corynecin III/corynecin I/corynecin II
+
+
+Details:
+
+>>
+1. BGC0001090
+Source: bacillomycin D
+Type: Polyketide+NRP:Lipopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 506.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_49	RBAM_018220	62	268	91.48936170212765	6.36e-91
+ctg31_50	RBAM_018210	57	238	92.55813953488372	1.36e-79
+
+
+
+>>
+2. BGC0001098
+Source: iturin
+Type: NRP+Polyketide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 504.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+BAB69693.1	BAB69693.1	1	1167	+	
+BAB69694.1	BAB69694.1	1192	1893	+	
+BAB69695.1	BAB69695.1	1911	2573	+	
+BAB69696.1	BAB69696.1	2586	3371	+	
+BAB69697.1	BAB69697.1	3930	5132	+	putative_malonyl-CoA_transacylase
+BAB69698.1	BAB69698.1	5152	17100	+	iturin_A_synthetase_A
+BAB69699.1	BAB69699.1	17145	33233	+	iturin_A_synthetase_B
+BAB69700.1	BAB69700.1	33322	41178	+	iturin_A_synthetase_C
+BAB69701.1	BAB69701.1	41487	41599	+	
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_49	BAB69694.1	62	266	91.48936170212765	3.65e-90
+ctg31_50	BAB69695.1	57	238	92.55813953488372	1.36e-79
+
+
+
+>>
+3. BGC0000774
+Source: lipopolysaccharide
+Type: Saccharide:Lipopolysaccharide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 489.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+AAK53494.1	AAK53494.1	134	772	+	conserved_protein_involved_in_carbohydrate_biosynthesis
+AAK53493.1	AAK53493.1	1054	1692	-	beta-subunit_of_putative_3-oxoacid_CoA-transferase
+AAK53462.1	AAK53462.1	1692	2420	-	alpha_subunit_of_putative_3-oxoacid_CoA-transferase
+AAA27610.1	AAA27610.1	2555	3901	+	phosphoglucomutase_/_phosphomannomutase
+AAK53463.1	AAK53463.1	3947	5350	+	phosphomannose_isomerase_/_GDP-mannose_pyrophosphorylase
+AAK53464.1	AAK53464.1	5472	6380	-	dTDP-4-dehydrorhamnose_reductase
+AAK53465.1	AAK53465.1	6377	6934	-	dTDP-4-dehydrorhamnose_3,5-epimerase
+AAA16191.1	AAA16191.1	6931	7818	-	glucose-1-phosphate_thymidylyltransferase
+AAK53466.1	AAK53466.1	7882	8937	-	dTDP-glucose_4,6-dehydratase
+AAK53467.1	AAK53467.1	9166	9912	+	putative_electron-transferring_flavoprotein_beta_subunit
+AAK53468.1	AAK53468.1	9912	10856	+	putative_electron-transferring_flavoprotein_alpha_subunit
+AAK53469.1	AAK53469.1	10916	11263	+	WxcH
+AAK53470.1	AAK53470.1	11312	12415	+	nucleotide_sugar_aminotransferase
+AAK53471.1	AAK53471.1	12400	13371	+	glycosyltransferase
+AAK53472.1	AAK53472.1	13368	14297	+	bifunctional_nucleotide_hexosamine_acetyltransferase_/_isomerase
+AAK53473.1	AAK53473.1	14284	14724	+	putative_integral_membrane_protein_WxcN
+AAK53474.1	AAK53474.1	14794	17046	+	integral_membrane_protein
+AAK53475.1	AAK53475.1	17188	18126	-	GDP-4-dehydro-D-rhamnose_reductase
+AAK53476.1	AAK53476.1	18110	19144	-	GDP-mannose_4,6-dehydratase
+AAK53477.1	AAK53477.1	19222	19857	-	Unknown
+AAK53478.1	AAK53478.1	19857	21602	-	putative_glycosyltransferase
+AAK53479.1	AAK53479.1	21623	22684	-	glycosyltransferase
+AAK53480.1	AAK53480.1	22734	25022	-	putative_protein_kinase
+AAK53481.1	AAK53481.1	25062	26348	-	ATP-binding_component_of_an_ABC-type_polysaccharide_exporter
+AAK53482.1	AAK53482.1	26345	27130	-	permease_protein_of_an_ABC-type_polysaccaharide_exporter
+AAK53483.1	AAK53483.1	27214	28599	-	glycosyltransferase
+AAK53484.1	AAK53484.1	28596	29795	-	cystathionine_gamma-synthase
+AAK53485.1	AAK53485.1	29889	31259	-	cystathionine_beta-lyase
+AAK53486.1	AAK53486.1	31491	31985	-	UptF
+AAK53487.1	AAK53487.1	32051	32941	-	putative_outer_membrane_protein_UptE_precursor
+AAK53488.1	AAK53488.1	32938	33321	-	putative_outer_membrane_protein_UptD_precursor
+AAK53489.1	AAK53489.1	33420	34553	+	type_II_secretion_system_protein-like_protein
+AAK53490.1	AAK53490.1	35073	35735	-	putative_maleylacetoacetate_isomerase
+AAK53491.1	AAK53491.1	35779	36768	-	putative_dioxygenase
+AAK53492.1	AAK53492.1	37148	37753	+	putative_ATP-dependent_RNA_helicase
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_49	AAK53462.1	57	243	91.48936170212765	6.27e-81
+ctg31_50	AAK53493.1	63	246	93.02325581395348	3.36e-83
+
+
+
+>>
+4. BGC0002284
+Source: corynecin III/corynecin I/corynecin II
+Type: Other
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 448.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_49	CPI83_20000	46	203	101.70212765957447	3.26e-65
+ctg31_50	CPI83_19995	59	245	93.02325581395348	1.19e-82
+

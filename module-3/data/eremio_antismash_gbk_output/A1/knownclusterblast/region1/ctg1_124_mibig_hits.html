@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QXJ26480.1</td>
+              <td>homoserine_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002370/1">BGC0002370</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>44.5</td>
+              <td>186.0</td>
+              <td>4.26e-51</td>
+          </tr>
+    
+          <tr>
+              <td>AGG35711.1</td>
+              <td>homoserine_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000883/1">BGC0000883</a></td>
+              <td>Other</td>
+              <td>32.0</td>
+              <td>48.1</td>
+              <td>186.0</td>
+              <td>5.11e-51</td>
+          </tr>
+    
+          <tr>
+              <td>QOP59287.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002504/1">BGC0002504</a></td>
+              <td>Polyketide</td>
+              <td>29.0</td>
+              <td>30.6</td>
+              <td>96.0</td>
+              <td>2.24e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AXO35186.1</td>
+              <td>aspartokinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001848/1">BGC0001848</a></td>
+              <td>Other</td>
+              <td>26.0</td>
+              <td>36.4</td>
+              <td>77.0</td>
+              <td>1.84e-14</td>
+          </tr>
+    
+          <tr>
+              <td>EWM63050.1</td>
+              <td>aspartate_kinase_2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000679/1">BGC0000679</a></td>
+              <td>Terpene</td>
+              <td>28.0</td>
+              <td>36.4</td>
+              <td>77.0</td>
+              <td>2.36e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AEF33090.1</td>
+              <td>aspartate_kinase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001039/1">BGC0001039</a></td>
+              <td>NRP+Polyketide</td>
+              <td>28.0</td>
+              <td>33.7</td>
+              <td>70.0</td>
+              <td>5.91e-12</td>
+          </tr>
+    
+          <tr>
+              <td>BAG21079.1</td>
+              <td>putative_aspartokinase_homologue</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000662/1">BGC0000662</a></td>
+              <td>Terpene</td>
+              <td>27.0</td>
+              <td>24.1</td>
+              <td>67.0</td>
+              <td>5.05e-11</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

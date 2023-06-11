@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>UHJ79949.1</td>
+              <td>flavin-dependent_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002654/1">BGC0002654</a></td>
+              <td>NRP</td>
+              <td>34.0</td>
+              <td>97.2</td>
+              <td>189.0</td>
+              <td>5.33e-56</td>
+          </tr>
+    
+          <tr>
+              <td>MCG7203807.1</td>
+              <td>flavin-dependent_monooxygenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000248/1">BGC0000248</a></td>
+              <td>Polyketide</td>
+              <td>31.0</td>
+              <td>96.9</td>
+              <td>176.0</td>
+              <td>4.55e-51</td>
+          </tr>
+    
+          <tr>
+              <td>CCA57474.1</td>
+              <td>hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002578/1">BGC0002578</a></td>
+              <td>Other</td>
+              <td>31.0</td>
+              <td>99.2</td>
+              <td>172.0</td>
+              <td>1.31e-49</td>
+          </tr>
+    
+          <tr>
+              <td>BBA97260.1</td>
+              <td>putative_hydrolase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002383/1">BGC0002383</a></td>
+              <td>Polyketide</td>
+              <td>34.0</td>
+              <td>95.9</td>
+              <td>172.0</td>
+              <td>2e-47</td>
+          </tr>
+    
+          <tr>
+              <td>ACN64826.1</td>
+              <td>PokU2</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001061/1">BGC0001061</a></td>
+              <td>Polyketide:Iterative type I polyketide+Polyketide:Type II polyketide+Saccharide:Hybrid/tailoring saccharide</td>
+              <td>31.0</td>
+              <td>95.4</td>
+              <td>150.0</td>
+              <td>2.15e-41</td>
+          </tr>
+    
+          <tr>
+              <td>QDQ37884.1</td>
+              <td>AlnT_hydroxylase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001979/1">BGC0001979</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>94.3</td>
+              <td>148.0</td>
+              <td>1.25e-40</td>
+          </tr>
+    
+          <tr>
+              <td>AKT74291.1</td>
+              <td>TxnO8</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002141/1">BGC0002141</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>96.9</td>
+              <td>146.0</td>
+              <td>6.31e-40</td>
+          </tr>
+    
+          <tr>
+              <td>ARG41915.1</td>
+              <td>IstL</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001622/1">BGC0001622</a></td>
+              <td>Polyketide</td>
+              <td>30.0</td>
+              <td>93.6</td>
+              <td>139.0</td>
+              <td>3.3e-37</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

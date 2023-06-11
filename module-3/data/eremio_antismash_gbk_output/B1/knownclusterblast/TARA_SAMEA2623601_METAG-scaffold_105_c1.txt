@@ -1,0 +1,155 @@
+ClusterBlast scores for TARA_SAMEA2623601_METAG-scaffold_105
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg21_86	88234	88402	-		
+ctg21_87	88461	88878	+		
+ctg21_88	88991	89393	+		
+ctg21_89	89477	89921	+		
+ctg21_90	89923	91063	-		
+ctg21_91	91191	91602	+		
+ctg21_92	91570	92926	+		
+ctg21_93	92926	93424	+		
+ctg21_94	93442	93916	+		
+ctg21_95	93916	95470	+		
+ctg21_96	95485	97324	+		
+ctg21_97	97307	97526	-		
+ctg21_98	97559	99425	-		
+ctg21_99	99580	101140	-		
+ctg21_100	101158	105565	-		
+ctg21_101	105679	107578	-		
+ctg21_102	107617	110572	-		
+ctg21_103	110641	112024	-		
+ctg21_104	112132	112822	+		
+ctg21_105	112846	113188	-		
+ctg21_106	113372	114680	+		
+ctg21_107	114676	116104	-		
+ctg21_108	116321	117272	+		
+ctg21_109	117281	117713	+		
+ctg21_110	117813	119310	+		
+ctg21_111	119377	120481	-		
+ctg21_112	120626	121025	+		
+ctg21_113	121002	121629	+		
+ctg21_114	121625	123032	+		
+ctg21_115	123088	123244	-		
+ctg21_116	123555	124146	-		
+ctg21_117	124322	124805	+		
+ctg21_118	124905	125478	+		
+ctg21_119	125559	126264	+		
+ctg21_120	126363	126750	+		
+ctg21_121	126774	127227	-		
+ctg21_122	127378	128086	+		
+ctg21_123	128030	128678	+		
+ctg21_124	128688	129879	+		
+
+
+Significant hits: 
+1. BGC0001090	bacillomycin D
+2. BGC0001098	iturin
+3. BGC0000774	lipopolysaccharide
+4. BGC0002284	corynecin III/corynecin I/corynecin II
+
+
+Details:
+
+>>
+1. BGC0001090
+Source: bacillomycin D
+Type: Polyketide+NRP:Lipopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 515.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg21_122	RBAM_018220	63	280	93.61702127659575	1.24e-95
+ctg21_123	RBAM_018210	57	235	93.48837209302326	1.57e-78
+
+
+
+>>
+2. BGC0001098
+Source: iturin
+Type: NRP+Polyketide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 513.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+BAB69693.1	BAB69693.1	1	1167	+	
+BAB69694.1	BAB69694.1	1192	1893	+	
+BAB69695.1	BAB69695.1	1911	2573	+	
+BAB69696.1	BAB69696.1	2586	3371	+	
+BAB69697.1	BAB69697.1	3930	5132	+	putative_malonyl-CoA_transacylase
+BAB69698.1	BAB69698.1	5152	17100	+	iturin_A_synthetase_A
+BAB69699.1	BAB69699.1	17145	33233	+	iturin_A_synthetase_B
+BAB69700.1	BAB69700.1	33322	41178	+	iturin_A_synthetase_C
+BAB69701.1	BAB69701.1	41487	41599	+	
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg21_122	BAB69694.1	63	278	93.61702127659575	7.14e-95
+ctg21_123	BAB69695.1	57	235	93.48837209302326	1.57e-78
+
+
+
+>>
+3. BGC0000774
+Source: lipopolysaccharide
+Type: Saccharide:Lipopolysaccharide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 505.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+AAK53494.1	AAK53494.1	134	772	+	conserved_protein_involved_in_carbohydrate_biosynthesis
+AAK53493.1	AAK53493.1	1054	1692	-	beta-subunit_of_putative_3-oxoacid_CoA-transferase
+AAK53462.1	AAK53462.1	1692	2420	-	alpha_subunit_of_putative_3-oxoacid_CoA-transferase
+AAA27610.1	AAA27610.1	2555	3901	+	phosphoglucomutase_/_phosphomannomutase
+AAK53463.1	AAK53463.1	3947	5350	+	phosphomannose_isomerase_/_GDP-mannose_pyrophosphorylase
+AAK53464.1	AAK53464.1	5472	6380	-	dTDP-4-dehydrorhamnose_reductase
+AAK53465.1	AAK53465.1	6377	6934	-	dTDP-4-dehydrorhamnose_3,5-epimerase
+AAA16191.1	AAA16191.1	6931	7818	-	glucose-1-phosphate_thymidylyltransferase
+AAK53466.1	AAK53466.1	7882	8937	-	dTDP-glucose_4,6-dehydratase
+AAK53467.1	AAK53467.1	9166	9912	+	putative_electron-transferring_flavoprotein_beta_subunit
+AAK53468.1	AAK53468.1	9912	10856	+	putative_electron-transferring_flavoprotein_alpha_subunit
+AAK53469.1	AAK53469.1	10916	11263	+	WxcH
+AAK53470.1	AAK53470.1	11312	12415	+	nucleotide_sugar_aminotransferase
+AAK53471.1	AAK53471.1	12400	13371	+	glycosyltransferase
+AAK53472.1	AAK53472.1	13368	14297	+	bifunctional_nucleotide_hexosamine_acetyltransferase_/_isomerase
+AAK53473.1	AAK53473.1	14284	14724	+	putative_integral_membrane_protein_WxcN
+AAK53474.1	AAK53474.1	14794	17046	+	integral_membrane_protein
+AAK53475.1	AAK53475.1	17188	18126	-	GDP-4-dehydro-D-rhamnose_reductase
+AAK53476.1	AAK53476.1	18110	19144	-	GDP-mannose_4,6-dehydratase
+AAK53477.1	AAK53477.1	19222	19857	-	Unknown
+AAK53478.1	AAK53478.1	19857	21602	-	putative_glycosyltransferase
+AAK53479.1	AAK53479.1	21623	22684	-	glycosyltransferase
+AAK53480.1	AAK53480.1	22734	25022	-	putative_protein_kinase
+AAK53481.1	AAK53481.1	25062	26348	-	ATP-binding_component_of_an_ABC-type_polysaccharide_exporter
+AAK53482.1	AAK53482.1	26345	27130	-	permease_protein_of_an_ABC-type_polysaccaharide_exporter
+AAK53483.1	AAK53483.1	27214	28599	-	glycosyltransferase
+AAK53484.1	AAK53484.1	28596	29795	-	cystathionine_gamma-synthase
+AAK53485.1	AAK53485.1	29889	31259	-	cystathionine_beta-lyase
+AAK53486.1	AAK53486.1	31491	31985	-	UptF
+AAK53487.1	AAK53487.1	32051	32941	-	putative_outer_membrane_protein_UptE_precursor
+AAK53488.1	AAK53488.1	32938	33321	-	putative_outer_membrane_protein_UptD_precursor
+AAK53489.1	AAK53489.1	33420	34553	+	type_II_secretion_system_protein-like_protein
+AAK53490.1	AAK53490.1	35073	35735	-	putative_maleylacetoacetate_isomerase
+AAK53491.1	AAK53491.1	35779	36768	-	putative_dioxygenase
+AAK53492.1	AAK53492.1	37148	37753	+	putative_ATP-dependent_RNA_helicase
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg21_122	AAK53462.1	59	256	92.34042553191489	2.17e-86
+ctg21_123	AAK53493.1	64	249	93.02325581395348	2.9e-84
+
+
+
+>>
+4. BGC0002284
+Source: corynecin III/corynecin I/corynecin II
+Type: Other
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 460.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg21_122	CPI83_20000	48	212	101.27659574468085	1.09e-68
+ctg21_123	CPI83_19995	61	248	91.62790697674419	7.25e-84
+

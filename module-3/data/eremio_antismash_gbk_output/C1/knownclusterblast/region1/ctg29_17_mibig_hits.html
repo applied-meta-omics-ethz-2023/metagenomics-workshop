@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ACK77769.1</td>
+              <td>glutamate_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000727/1">BGC0000727</a></td>
+              <td>Saccharide</td>
+              <td>62.0</td>
+              <td>98.7</td>
+              <td>558.0</td>
+              <td>1.82e-198</td>
+          </tr>
+    
+          <tr>
+              <td>CRI73797.1</td>
+              <td>glutamate_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001215/1">BGC0001215</a></td>
+              <td>NRP</td>
+              <td>62.0</td>
+              <td>97.4</td>
+              <td>535.0</td>
+              <td>1.91e-189</td>
+          </tr>
+    
+          <tr>
+              <td>AAO65782.1</td>
+              <td>glutamate_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000100/1">BGC0000100</a></td>
+              <td>Polyketide</td>
+              <td>62.0</td>
+              <td>74.6</td>
+              <td>425.0</td>
+              <td>7.73e-148</td>
+          </tr>
+    
+          <tr>
+              <td>AAN07911.1</td>
+              <td>putative_NADP-specific_glutamate_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000851/1">BGC0000851</a></td>
+              <td>Other</td>
+              <td>61.0</td>
+              <td>74.2</td>
+              <td>402.0</td>
+              <td>2.5e-138</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78689.1</td>
+              <td>amino_acid_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001418/1">BGC0001418</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>35.0</td>
+              <td>76.6</td>
+              <td>210.0</td>
+              <td>4.29e-62</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78713.1</td>
+              <td>amino_acid_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001420/1">BGC0001420</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>35.0</td>
+              <td>76.6</td>
+              <td>210.0</td>
+              <td>4.29e-62</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78701.1</td>
+              <td>amino_acid_dehydrogenase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0001419/1">BGC0001419</a></td>
+              <td>NRP:Cyclic depsipeptide+Polyketide:Iterative type I polyketide</td>
+              <td>35.0</td>
+              <td>76.6</td>
+              <td>209.0</td>
+              <td>1.17e-61</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

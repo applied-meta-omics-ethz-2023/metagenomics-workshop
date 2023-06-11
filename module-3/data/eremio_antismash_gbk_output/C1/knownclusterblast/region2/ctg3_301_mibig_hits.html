@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>CAG44662.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002681/1">BGC0002681</a></td>
+              <td>Other</td>
+              <td>27.0</td>
+              <td>86.3</td>
+              <td>132.0</td>
+              <td>1.77e-32</td>
+          </tr>
+    
+          <tr>
+              <td>ABD31456.1</td>
+              <td>Siderophore_Transporter</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000944/1">BGC0000944</a></td>
+              <td>Other:Non-NRP siderophore</td>
+              <td>26.0</td>
+              <td>79.3</td>
+              <td>110.0</td>
+              <td>2.04e-25</td>
+          </tr>
+    
+          <tr>
+              <td>ABD31458.1</td>
+              <td>L-ornithine_Racemase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000944/1">BGC0000944</a></td>
+              <td>Other:Non-NRP siderophore</td>
+              <td>23.0</td>
+              <td>96.8</td>
+              <td>103.0</td>
+              <td>4.55e-23</td>
+          </tr>
+    
+          <tr>
+              <td>CAM86881.1</td>
+              <td>conserved_hypothetical_protein;_putative_siderophore_biosynthesis_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002471/1">BGC0002471</a></td>
+              <td>Other</td>
+              <td>22.0</td>
+              <td>91.3</td>
+              <td>78.0</td>
+              <td>7.69e-15</td>
+          </tr>
+    
+          <tr>
+              <td>SQF72447.1</td>
+              <td>Siderophore_staphylobactin_biosynthesis_protein_SbnC</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0000943/1">BGC0000943</a></td>
+              <td>Other</td>
+              <td>22.0</td>
+              <td>58.2</td>
+              <td>62.0</td>
+              <td>6.82e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ACA84881.1</td>
+              <td>IucA/IucC_family_protein</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002469/1">BGC0002469</a></td>
+              <td>Other</td>
+              <td>25.0</td>
+              <td>61.0</td>
+              <td>61.0</td>
+              <td>1.96e-09</td>
+          </tr>
+    
+          <tr>
+              <td>RUP78899.1</td>
+              <td>GNAT_family_N-acetyltransferase</td>
+              <td><a href="https://mibig.secondarymetabolites.org/go/BGC0002073/1">BGC0002073</a></td>
+              <td>NRP</td>
+              <td>23.0</td>
+              <td>83.2</td>
+              <td>57.0</td>
+              <td>3.04e-08</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>
