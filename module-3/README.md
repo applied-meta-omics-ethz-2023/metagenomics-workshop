@@ -68,7 +68,6 @@ Suggestions for additional tools to add welcome!
 - **[antiSMASH documentation](https://docs.antismash.secondarymetabolites.org/)**: a helpful user guide to antiSMASH
 - **[fungiSMASH](https://fungismash.secondarymetabolites.org/#!/start)**: similar to antiSMASH, but specifically built for fungal genomes
 - **[plantiSMASH](http://plantismash.secondarymetabolites.org/)**: similar to antiSMASH, but specifically built for plant genomes
-- **[MIBiG](https://mibig.secondarymetabolites.org/)**: **M**inimum **I**nformation about a **Bi**osynthetic **G**ene cluster repository, a large, curated repository of biosynthetic gene clusters with annotations and links to relevant publications and/or genomic data
 - **[GECCO](https://gecco.embl.de)**, alternative, *de novo* approach to find BGCs 
 - **[DeepBGC](https://github.com/Merck/deepbgc)** deep learning approach for BGC detection
 - **[BAGEL4](https://github.com/annejong/BAGEL4)** search DNA for bacteriocins and RiPPs 
@@ -89,4 +88,6 @@ Suggestions for additional tools to add welcome!
 - **[BiG-MAP](https://github.com/medema-group/BiG-MAP)** a bioinformatic tool to profile abundance and expression levels of gene clusters across metagenomic and metatranscriptomic data
 - **[NPLinker](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008920)** Software framework to link genomic and metabolomic data.
 
+## Useful databases
+- **[MIBiG](https://mibig.secondarymetabolites.org/)**: **M**inimum **I**nformation about a **Bi**osynthetic **G**ene cluster repository, a large, curated repository of biosynthetic gene clusters with annotations and links to relevant publications and/or genomic data
 
