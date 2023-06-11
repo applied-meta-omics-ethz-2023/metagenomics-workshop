@@ -33,7 +33,17 @@ scp -r yourusername@cousteau.ethz.ch:antismash_output_dir your_local_dir
 ```
 You can visualize the results by opening index.html in any web browser. Anything look interesting? You can dig deeper, or choose to work with your own data trying out some tools in the next section.
 
-5. If you want to try to cluster antiSMASH results, we can use a tool developed in the Ziemert lab, **[Clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)** to clustering BGCs into groups.
+5. Let's dive deeper into one specific clade. In this repo you will find the pre-processed antiSMASH results for 5 representative MAGs from 5 different marine clades in the phylum '*Candidatus* Eremiobacterota' as follows:
+
+|ID|Scientific name|Representative MAG ocean region|
+|:---:|:------------:|:----------:|
+|A1|Epipelagic|*Ca.* Amphithoemicrobium indianii|
+|A2|Mesopelagic|*Ca.* Amphithoemicrobium mesopelagicum|
+|A3|Epipelagic|*Ca.* Autonoemicrobium septentrionale|
+|C1|Epipelagic|*Ca.* Eudoremicrobium taraoceanii|
+|C2|Bathypelatic|*Ca.* Eudoremicrobium malaspinii|
+
+In order to cluster these antiSMASH results to see which clusters are conserved between the clades, we can use a tool developed in the Ziemert lab, **[Clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)** to cluster the BGCs into groups.
 
 6. Install clust-o-matic
 ```
@@ -48,7 +58,6 @@ pip3 install -r requirements.txt
 ```
 >CLUSTERNAME_GENENAME
 ```
-
 8. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using scp as shown above.
 
 # Additional resources and links
