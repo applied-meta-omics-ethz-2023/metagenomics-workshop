@@ -103,7 +103,14 @@ Module 2:<br>
 ```
 conda create -yn module-2
 conda activate module-2
-conda install -y gtdbtk # ignore the commands to download the database
+# Let's start by installing GTDBTk
+conda install -y gtdbtk
+# ignore the commands to download the database and instead use the following:
+cd /nfs/teaching/scratch/$USER/environments/module-2/share/gtdbtk-1.0.2/
+rm -r db
+ln -s /nfs/teaching/databases/gtdb/data /nfs/teaching/scratch/$USER/environments/module-2/share/gtdbtk-1.0.2/db
+cd ~
+# Now let's install CheckM
 conda install -y checkm-genome
 # To finish setting up CheckM, please run the following to set up the database:
 export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm/data
