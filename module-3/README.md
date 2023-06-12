@@ -120,5 +120,5 @@ This is a non-exhaustive list focused primarily on tools related to (meta)genomi
 
 ## Useful databases
 - **[MIBiG](https://mibig.secondarymetabolites.org/)**: **M**inimum **I**nformation about a **Bi**osynthetic **G**ene cluster repository, a large, curated repository of biosynthetic gene clusters with annotations and links to relevant publications and/or genomic data
-- **[BiGFAM]**
+- **[BiGFAM](https://bigfam.bioinformatics.nl/home)** database for "homologous" groups of BGCs putatively encoding the production of similar metabolites.
 
