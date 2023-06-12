@@ -72,7 +72,7 @@ Suggestions for additional tools to add welcome!
 - **[DeepBGC](https://github.com/Merck/deepbgc)** deep learning approach for BGC detection
 
 ## Class-specific BGC detection
-- **[RiPP RODEO](https://ripp.rodeo/index.html)
+- **[RiPP RODEO](https://ripp.rodeo/index.html)**
 - **[BAGEL4](https://github.com/annejong/BAGEL4)** search DNA for bacteriocins and RiPPs
 - **[DeepRipp](http://deepripp.magarveylab.ca)** neural network-based detection of RiPPs
 - **[decRiPPter](https://github.com/Alexamk/decRiPPter)** designed to detect novel RiPP BGCs not restricted to specific genetic markers
