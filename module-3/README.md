@@ -41,9 +41,9 @@ You can visualize the results by opening index.html in any web browser. Anything
 |A2|Mesopelagic|*Ca.* Amphithoemicrobium mesopelagicum|
 |A3|Epipelagic|*Ca.* Autonoemicrobium septentrionale|
 |C1|Epipelagic|*Ca.* Eudoremicrobium taraoceanii|
-|C2|Bathypelatic|*Ca.* Eudoremicrobium malaspinii|
+|C2|Bathypelagic|*Ca.* Eudoremicrobium malaspinii|
 
-We will compare the BGCs between these different MAGs to see which BGCs are conserved between the clades and which are unique. For a lean clustering tool, we can use a tool developed in the Ziemert lab, **[Clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)** to cluster the BGCs into groups. For other options (requirng database downloads) see other clustering tools below such as **[BiG-SLiCE](https://github.com/medema-group/bigslice)**.
+We will compare the BGCs between these different MAGs to see which BGCs are conserved between the clades and which are unique. Among several clustering tools available (see below), in this workshop we'll tool developed in the Ziemert lab, **[Clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)** to cluster the BGCs into groups. For other options (requirng database downloads) see other clustering tools below such as **[BiG-SLiCE](https://github.com/medema-group/bigslice)**.
 
 6. Install clust-o-matic
 ```
@@ -58,6 +58,16 @@ pip3 install -r requirements.txt
 ```
 >CLUSTERNAME_GENENAME
 ```
+<details>
+<summary><i>Click for instructions:</I></summary>
+
+```
+git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
+python3 
+```
+
+</details>
+
 8. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using scp as shown above.
 
 # Additional resources and links
