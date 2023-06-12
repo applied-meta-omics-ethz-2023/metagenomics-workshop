@@ -108,11 +108,9 @@ conda deactivate
 
 Module 2:<br>
 ```
-
- 
-# Let's start by installing GTDBTk
-
- 
+conda create -yn module-2
+conda activate module-2
+mamba install -y gtdbtk=2.3.0 checkm-genome=1.2.2
 # ignore the commands to download the database and instead use the following:
 cd /nfs/teaching/scratch/$USER/environments/module-2/share/gtdbtk-2.3.0/
 rm -r db
