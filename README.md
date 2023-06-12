@@ -87,6 +87,13 @@ mkdir -p /nfs/teaching/scratch/$USER/environments/
 conda config --add envs_dirs /nfs/teaching/scratch/$USER/environments/
 ```
 
+</details>
+ 
+5. Preparing the conda environments for the workshop 
+
+<details>
+<summary><i>Click for instructions:</I></summary>
+ 
 * Set up three distinct conda environments for the three modules of the workshop as follows:
 
 Module 1:<br>
@@ -128,11 +135,11 @@ conda create -yn module-3
 
 </details>
 
-5. Git clone the [applied-meta-omics-ethz-2023/metagenomics-workshop Github repo](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop)
+6. Git clone the [applied-meta-omics-ethz-2023/metagenomics-workshop Github repo](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop)
 
 ```
 git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
 ```
 
 
-6. If you're completed all the steps above, you are ready to go. We will get started with [Module 1!](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) 
+7. If you're completed all the steps above, you are ready to go. We will get started with [Module 1!](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) 
