@@ -61,7 +61,7 @@ pip3 install -r requirements.txt
 8. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using scp as shown above.
 
 # Additional resources and links
-Suggestions for additional tools to add welcome!
+This is a non-exhaustive list. Suggestions for additional tools to add welcome!
 
 ## General tools for detection of biosynthetic gene clusters (BGCs)
 - **[antiSMASH](https://antismash.secondarymetabolites.org/#!/start)**: **anti**biotics and **S**econdary **M**etabolite **A**nalysis **S**hell, a bacterial biosynthetic gene cluster prediction and characterization tool
@@ -73,7 +73,7 @@ Suggestions for additional tools to add welcome!
 - **[biosyntheticSPAdes](https://cab.spbu.ru/software/biosyntheticspades/)** reconstructs BGCs in assembly graphs from genomic and metagenomics data sets
 
 ## Class-specific BGC detection
-- **[RiPP RODEO](https://ripp.rodeo/index.html)**
+- **[RiPP RODEO](https://ripp.rodeo/index.html)** RiPP discovery and genomic context
 - **[BAGEL4](https://github.com/annejong/BAGEL4)** search DNA for bacteriocins and RiPPs
 - **[DeepRipp](http://deepripp.magarveylab.ca)** neural network-based detection of RiPPs
 - **[decRiPPter](https://github.com/Alexamk/decRiPPter)** designed to detect novel RiPP BGCs not restricted to specific genetic markers
