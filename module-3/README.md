@@ -63,14 +63,20 @@ pip3 install -r requirements.txt
 # Additional resources and links
 Suggestions for additional tools to add welcome!
 
-## Detection of biosynthetic gene clusters (BGCs)
+## General tools for detection of biosynthetic gene clusters (BGCs)
 - **[antiSMASH](https://antismash.secondarymetabolites.org/#!/start)**: **anti**biotics and **S**econdary **M**etabolite **A**nalysis **S**hell, a bacterial biosynthetic gene cluster prediction and characterization tool
 - **[antiSMASH documentation](https://docs.antismash.secondarymetabolites.org/)**: a helpful user guide to antiSMASH
 - **[fungiSMASH](https://fungismash.secondarymetabolites.org/#!/start)**: similar to antiSMASH, but specifically built for fungal genomes
 - **[plantiSMASH](http://plantismash.secondarymetabolites.org/)**: similar to antiSMASH, but specifically built for plant genomes
 - **[GECCO](https://gecco.embl.de)**, alternative, *de novo* approach to find BGCs 
 - **[DeepBGC](https://github.com/Merck/deepbgc)** deep learning approach for BGC detection
-- **[BAGEL4](https://github.com/annejong/BAGEL4)** search DNA for bacteriocins and RiPPs 
+
+## Class-specific BGC detection
+- **[RiPP RODEO](https://ripp.rodeo/index.html)
+- **[BAGEL4](https://github.com/annejong/BAGEL4)** search DNA for bacteriocins and RiPPs
+- **[DeepRipp](http://deepripp.magarveylab.ca)** neural network-based detection of RiPPs
+- **[decRiPPter](https://github.com/Alexamk/decRiPPter)** designed to detect novel RiPP BGCs not restricted to specific genetic markers
+- **[transPACT](https://github.com/chevrm/transPACT)** *trans*-acetyltransferase polyketide synthase detection
 
 ## Analysis using evolutionary principles
 - **[ARTS](http://arts.ziemertlab.com/)**: **A**ntibiotic **R**esistant **T**arget **S**eeker, a tool to help identify resistance genes within BGCs.
