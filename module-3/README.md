@@ -17,21 +17,19 @@
 Try running antiSMASH --help to check the available options
 ```
 antismash --help-showall 
-antismash test_cluster.gbk
 ```
 3. Next try running antiSMASH on your MAGs. You cannot run jobs in parallel but you can open [screens](https://kb.iu.edu/d/acuy)
 ```
-antismash yourMAG.gbk
+antismash ~/metagenomics-workshop/module-3/data/eremio_rep_mags/C2.fasta
 ```
-If you'd like an extra challenge, you can write a bash script that will run antiSMASH on all the MAGs.
+If you'd like an extra challenge, you can write a bash script that will run antiSMASH on all the MAGs in ```~/metagenomics-workshop/module-3/data/eremio_rep_mags/.```
 
-4. Interpretation and visaulization of results
-If you are not familiar with antiSMASH output, here is an [explanation](https://docs.antismash.secondarymetabolites.org/understanding_output/)
+4. Interpretation and visaulization of antismash results. Check out this [explanation](https://docs.antismash.secondarymetabolites.org/understanding_output/)
 
 ```
 scp -r yourusername@cousteau.ethz.ch:antismash_output_dir your_local_dir
 ```
-You can visualize the results by opening index.html in any web browser. Anything look interesting? You can dig deeper, or choose to work with your own data trying out some tools in the next section.
+You can visualize the results by opening ```index.html``` in any web browser. Anything look interesting? 
 
 5. Let's dive deeper to compare BGC profiles within a specific clade. In this repo you will find the pre-processed antiSMASH results for 5 representative MAGs from marine clades in the phylum '*Candidatus* Eremiobacterota' as follows:
 
@@ -49,7 +47,7 @@ We will compare the BGCs between these different MAGs to see which BGCs are cons
 ```
 git clone https://github.com/Helmholtz-HIPS/clustomatic_source
 conda install -c bioconda diamond
-cd clustomatic_source
+cd ~/clustomatic_source/
 pip3 install -r requirements.txt
 ```
 
@@ -73,7 +71,6 @@ cd ~/clustomatic_source/
 python3 clustomatic.py gb2fasta_output.fasta 0.95 > clustomatic_output.txt
 less clustomatic_output.txt
 ```  
-
 On your local terminal: <br>
 ```
 scp -r yourusername@cousteau.ethz.ch:clustomatic_source/clustomatic_output.txt your_local_dir
