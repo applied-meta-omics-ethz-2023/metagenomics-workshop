@@ -58,11 +58,13 @@ pip3 install -r requirements.txt
 ```
 >BGCNUM_PROTEINNUM
 ```
-A Python script in order to do this taking your antiSMASH output folder as an example```module-3/scripts/gb2fasta.py``` which takes the antismash output as the first argument and the name of a new FASTA file to be written as the second argument is provided.
+A Python script in order to do this taking your antiSMASH output folder as an example```~/metagenomic-workshop/module-3/scripts/gb2fasta.py``` which takes the antismash output as the first argument and the name of a new FASTA file to be written as the second argument is provided.
 
 <details>
 <summary><i>Click for more detailed instructions:</I></summary>
-From your user directory when you login:
+ 
+From your user directory when you login: <br>
+ 
 ```
 git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
 cd metagenomics-workshop/module-3/
@@ -72,7 +74,7 @@ python3 clustomatic.py gb2fasta_output.fasta 0.95 > clustomatic_output.txt
 less clustomatic_output.txt
 ```  
 
- On your local terminal:
+ On your local terminal: <br>
 ```
 scp -r yourusername@cousteau.ethz.ch:clustomatic_source/clustomatic_output.txt your_local_dir
 ```
