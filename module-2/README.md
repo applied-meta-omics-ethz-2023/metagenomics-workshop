@@ -72,7 +72,7 @@ Prompt the help message of `gtdbtk` and try to run the `classify_wf` with 6 thre
 <summary><i>Click to display the GTDB-Tk command</I></summary>
   
   ```
-  gtdbtk classify_wf --genome_dir ACIN21-1_SAMN05422137_METAG-bins/ --out_dir ACIN21-1_SAMN05422137_METAG-gtdb/ --extension fa --cpus 6
+  gtdbtk classify_wf --genome_dir ACIN21-1_SAMN05422137_METAG-bins/ --out_dir ACIN21-1_SAMN05422137_METAG-gtdb/ --skip_ani_screen --extension fa --cpus 6
   ```
 
 </details>
