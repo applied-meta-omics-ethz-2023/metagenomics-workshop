@@ -37,7 +37,7 @@ You can visualize the results by opening ```index.html``` in any web browser. An
 |:---:|:------------:|:----------:|
 |A1|Epipelagic|*Ca.* Amphithoemicrobium indianii|
 |A2|Mesopelagic|*Ca.* Amphithoemicrobium mesopelagicum|
-|A3|Epipelagic|*Ca.* Autonoemicrobium septentrionale|
+|B1|Epipelagic|*Ca.* Autonoemicrobium septentrionale|
 |C1|Epipelagic|*Ca.* Eudoremicrobium taraoceanii|
 |C2|Bathypelagic|*Ca.* Eudoremicrobium malaspinii|
 
