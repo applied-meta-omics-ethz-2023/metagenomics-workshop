@@ -54,10 +54,12 @@ pip3 install -r requirements.txt
 ```
 
 7. Run clust-o-matic on the pre-processed Eremiobacterota results from antiSMASH. <br>
-**Note:** In order to convert the antiSMASH output you can use available tools or your favorite langauge Genbank to FASTA format and modify the FASTA headers to fit the following format. A script ```genbank2fasta.py``` is provided in the repo.
+**Note:** In order to convert the antiSMASH output you can use available tools or your favorite langauge Genbank to FASTA format and modify the FASTA headers to fit the following format. 
 ```
->CLUSTERNAME_GENENAME
+>BGCNUM_PROTEINNUM
 ```
+A Python script in order to do this taking your antiSMASH output folder as an example```scripts/gb2fasta.py``` is provided in the repo.
+
 <details>
 <summary><i>Click for instructions:</I></summary>
 
