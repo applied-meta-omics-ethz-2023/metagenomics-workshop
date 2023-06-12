@@ -62,7 +62,7 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 - press ENTER, scroll down, type in ‘yes’<br>
 - press ENTER<br>
 - type in yes<br>
-- close and reopen session (exit; ssh cousteau)<br>
+- close and reopen session (`exit` then `ssh cousteau`)<br>
 
 - ```rm Miniconda3-latest-Linux-x86_64.sh```<br>
 - Install should take ~5min<br>
