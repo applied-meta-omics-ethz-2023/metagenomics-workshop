@@ -54,11 +54,11 @@ pip3 install -r requirements.txt
 ```
 
 7. Run clust-o-matic on the pre-processed Eremiobacterota results from antiSMASH testing out different clustering thresholds. <br>
-**Note:** In order to convert the antiSMASH output you can use available tools or your favorite langauge Genbank to FASTA format and modify the FASTA headers to fit the following format. 
+**Note:** In order to convert the antiSMASH output you can use available tools or your favorite langauge to convert Genbank files to FASTA format and modify the FASTA headers using the following **[clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)**  convention. 
 ```
 >BGCNUM_PROTEINNUM
 ```
-A Python script in order to do this taking your antiSMASH output folder as an example```~/metagenomic-workshop/module-3/scripts/gb2fasta.py``` which takes the antismash output as the first argument and the name of a new FASTA file to be written as the second argument is provided.
+A python script which takes the antismash output directory as the first argument and the name of a new combined FASTA file to be written as the second argument is provided in ```~/metagenomic-workshop/module-3/scripts/gb2fasta.py```.
 
 <details>
 <summary><i>Click for more detailed instructions:</I></summary>
@@ -74,7 +74,7 @@ python3 clustomatic.py gb2fasta_output.fasta 0.95 > clustomatic_output.txt
 less clustomatic_output.txt
 ```  
 
- On your local terminal: <br>
+On your local terminal: <br>
 ```
 scp -r yourusername@cousteau.ethz.ch:clustomatic_source/clustomatic_output.txt your_local_dir
 ```
