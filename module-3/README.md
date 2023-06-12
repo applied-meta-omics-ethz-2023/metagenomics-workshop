@@ -21,16 +21,17 @@ antismash --help-showall
 ```
 antismash yourMAG.fa
 ```
-If you'd like an extra challenge, you can write a script that will run antiSMASH on all the MAGs in ```~/metagenomics-workshop/module-3/data/eremio_rep_mags/```
+If you'd like an extra challenge, you can write a script that will run antiSMASH on all your MAGs.
 
-4. Interpretation and visaulization of antismash results. Check out this [explanation](https://docs.antismash.secondarymetabolites.org/understanding_output/)
+4. Interpretation and visaulization of antismash results. Check out this [explanation](https://docs.antismash.secondarymetabolites.org/understanding_output/). 
 
+From a local terminal:
 ```
 scp -r yourusername@cousteau.ethz.ch:antismash_output_dir your_local_dir
 ```
 You can visualize the results by opening ```index.html``` in any web browser. Anything look interesting? 
 
-5. Let's dive deeper to compare BGC profiles within a specific clade. In this repo you will find the pre-processed [MAGs](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3/data/eremio_rep_mags) and [antiSMASH results](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3/data/eremio_antismash_gbk_output/) for 5 representative marine clades in the phylum '*Candidatus* Eremiobacterota' as follows:
+5. Let's dive deeper to compare BGC profiles within a specific clade. In module-3 repo you will find the pre-processed [MAGs](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3/data/eremio_rep_mags) and [antiSMASH results](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3/data/eremio_antismash_gbk_output/) for 5 representative marine clades in the phylum '*Candidatus* Eremiobacterota' as follows:
 
 |ID|Ocean region of representative MAG|Scientific name|
 |:---:|:------------:|:----------:|
