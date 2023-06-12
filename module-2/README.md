@@ -45,6 +45,8 @@ Let's start by displaying the help page of CheckM lineage workflow.
   checkm
   checkm lineage_wf --help
   ```
+  
+  Small tip: if you want to scroll back up within a `screen` session, you can press simultaneously `ctrl+a` and then `esc`. You can get back to the normal features of the screen by pressing `esc` once more.
 
 </details>
 
