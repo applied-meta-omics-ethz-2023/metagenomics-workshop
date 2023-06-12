@@ -20,7 +20,7 @@ antismash --help-showall
 ```
 3. Next try running antiSMASH on your MAGs. You cannot run jobs in parallel but you can open [screens](https://kb.iu.edu/d/acuy)
 ```
-antismash ~/metagenomics-workshop/module-3/data/eremio_rep_mags/C2.fasta
+antismash yourMAG.fa
 ```
 If you'd like an extra challenge, you can write a bash script that will run antiSMASH on all the MAGs in ```~/metagenomics-workshop/module-3/data/eremio_rep_mags/.```
 
