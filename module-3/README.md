@@ -21,7 +21,7 @@ antismash --help-showall
 ```
 antismash yourMAG.fa
 ```
-If you'd like an extra challenge, you can write a bash script that will run antiSMASH on all the MAGs in ```~/metagenomics-workshop/module-3/data/eremio_rep_mags/.```
+If you'd like an extra challenge, you can write a script that will run antiSMASH on all the MAGs in ```~/metagenomics-workshop/module-3/data/eremio_rep_mags/```
 
 4. Interpretation and visaulization of antismash results. Check out this [explanation](https://docs.antismash.secondarymetabolites.org/understanding_output/)
 
