@@ -10,6 +10,20 @@ So how do we estimated completeness and contamination? The idea is to use univer
 
 To estimate genome completeness and contimation you have several options, including [CheckM](https://github.com/Ecogenomics/CheckM), Anvi'o or BUSCO. Here, we will use CheckM.
 
+To get started, deactivate the conda environment from module-1, activate the environment from module-2, move to the right directory (the module-2 directory) and link the bins folder to this new directory.
+
+<details>
+<summary><i>Click to display the command lines</I></summary>
+
+  ```
+  conda deactivate module-1
+  conda activate module-2
+  cd ~/metagenomics-workshop/module-2
+  ln -s ~/metagenomics-workshop/module-1/ACIN21-1_SAMN05422137_METAG-bins .
+  ```
+
+</details>
+
 ### Evaluate the quality of the bins with CheckM
 
 Let's start by displaying the help page of CheckM lineage workflow.
@@ -18,7 +32,6 @@ Let's start by displaying the help page of CheckM lineage workflow.
 <summary><i>Click to display the command lines</I></summary>
 
   ```
-  conda activate module-2
   checkm
   checkm lineage_wf --help
   ```
