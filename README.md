@@ -62,7 +62,7 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 - press ENTER, scroll down, type in ‘yes’<br>
 - press ENTER<br>
 - type in yes<br>
-- close and reopen session (exit; ssh cousteau)<br>
+- close and reopen session (`exit` then `ssh cousteau`)<br>
 
 - ```rm Miniconda3-latest-Linux-x86_64.sh```<br>
 - Install should take ~5min<br>
@@ -80,16 +80,29 @@ conda config --add channels bioconda
 conda install mamba
 mamba install git
 ```
+ 
+* Set up default path for the conda environments (otherwise they will be installed in our home and we will run out of space)
+```
+mkdir -p /nfs/teaching/scratch/$USER/environments/
+conda config --add envs_dirs /nfs/teaching/scratch/$USER/environments/
+```
 
+</details>
+ 
+5. Preparing the conda environments for the workshop 
+
+<details>
+<summary><i>Click for instructions:</I></summary>
+ 
 * Set up three distinct conda environments for the three modules of the workshop as follows:
 
 Module 1:<br>
 ```
 conda create -yn module-1
 conda activate module-1
-conda install metabat2
-conda install samtools
-conda install bwa
+conda install -y metabat2
+conda install -y samtools
+conda install -y bwa
 conda deactivate 
 ```
 
@@ -97,29 +110,34 @@ Module 2:<br>
 ```
 conda create -yn module-2
 conda activate module-2
-conda install gtdbtk
-conda install checkm-genome
-# To finish setting up CheckM, please run the following to set up the database:
-export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm
-echo "export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm" >> .bashrc
+mamba install -y gtdbtk=2.3.0 checkm-genome=1.2.2
+# ignore the commands to download the database and instead use the following:
+cd /nfs/teaching/scratch/$USER/environments/module-2/share/gtdbtk-2.3.0/
+rm -r db
+ln -s /nfs/teaching/databases/gtdb/data /nfs/teaching/scratch/$USER/environments/module-2/share/gtdbtk-2.3.0/db
+cd ~
+export GTDBTK_DATA_PATH=/nfs/teaching/databases/gtdb/data/
+echo "export GTDBTK_DATA_PATH=/nfs/teaching/databases/gtdb/data/" >> .bashrc
+# Now let's finish setting up CheckM, please run the following to set up the database:
+export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm/data
+echo "export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm/data" >> .bashrc
+conda deactivate
 ```
 
 Module 3:<br>
 ```
 conda create -yn module-3
-conda activate module-3
-mamba install antismash 
-download-antismash-databases
+# we don't need to install anything there yet
 ```
 
 
 </details>
 
-5. Git clone the [applied-meta-omics-ethz-2023/metagenomics-workshop Github repo](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop)
+6. Git clone the [applied-meta-omics-ethz-2023/metagenomics-workshop Github repo](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop)
 
 ```
 git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
 ```
 
 
-6. If you're completed all the steps above, you are ready to go. We will get started with [Module 1!](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) 
+7. If you're completed all the steps above, you are ready to go. We will get started with [Module 1!](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-1) 

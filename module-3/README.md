@@ -41,9 +41,9 @@ You can visualize the results by opening index.html in any web browser. Anything
 |A2|Mesopelagic|*Ca.* Amphithoemicrobium mesopelagicum|
 |A3|Epipelagic|*Ca.* Autonoemicrobium septentrionale|
 |C1|Epipelagic|*Ca.* Eudoremicrobium taraoceanii|
-|C2|Bathypelatic|*Ca.* Eudoremicrobium malaspinii|
+|C2|Bathypelagic|*Ca.* Eudoremicrobium malaspinii|
 
-We will compare the BGCs between these different MAGs to see which BGCs are conserved between the clades and which are unique. For a lean clustering tool, we can use a tool developed in the Ziemert lab, **[Clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)** to cluster the BGCs into groups. For other options (requirng database downloads) see other clustering tools below such as **[BiG-SLiCE](https://github.com/medema-group/bigslice)**.
+We will compare the BGCs between these different MAGs to see which BGCs are conserved between the clades and which are unique. Among several clustering tools available (see below), in this workshop we'll tool developed in the Ziemert lab, **[Clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)** to cluster the BGCs into groups. For other options (requirng database downloads) see other clustering tools below such as **[BiG-SLiCE](https://github.com/medema-group/bigslice)**.
 
 6. Install clust-o-matic
 ```
@@ -58,10 +58,20 @@ pip3 install -r requirements.txt
 ```
 >CLUSTERNAME_GENENAME
 ```
+<details>
+<summary><i>Click for instructions:</I></summary>
+
+```
+git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
+python3 
+```
+
+</details>
+
 8. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using scp as shown above.
 
 # Additional resources and links
-Suggestions for additional tools to add welcome!
+This is a non-exhaustive list. Suggestions for additional tools to add welcome!
 
 ## General tools for detection of biosynthetic gene clusters (BGCs)
 - **[antiSMASH](https://antismash.secondarymetabolites.org/#!/start)**: **anti**biotics and **S**econdary **M**etabolite **A**nalysis **S**hell, a bacterial biosynthetic gene cluster prediction and characterization tool
@@ -70,9 +80,10 @@ Suggestions for additional tools to add welcome!
 - **[plantiSMASH](http://plantismash.secondarymetabolites.org/)**: similar to antiSMASH, but specifically built for plant genomes
 - **[GECCO](https://gecco.embl.de)**, alternative, *de novo* approach to find BGCs 
 - **[DeepBGC](https://github.com/Merck/deepbgc)** deep learning approach for BGC detection
+- **[biosyntheticSPAdes](https://cab.spbu.ru/software/biosyntheticspades/)** reconstructs BGCs in assembly graphs from genomic and metagenomics data sets
 
 ## Class-specific BGC detection
-- **[RiPP RODEO](https://ripp.rodeo/index.html)**
+- **[RiPP RODEO](https://ripp.rodeo/index.html)** RiPP discovery and genomic context
 - **[BAGEL4](https://github.com/annejong/BAGEL4)** search DNA for bacteriocins and RiPPs
 - **[DeepRipp](http://deepripp.magarveylab.ca)** neural network-based detection of RiPPs
 - **[decRiPPter](https://github.com/Alexamk/decRiPPter)** designed to detect novel RiPP BGCs not restricted to specific genetic markers

@@ -7,6 +7,8 @@ General philosophy: to get the most out of this workshop, try to write the comma
 
 You should already have everything set up by now, so let's make sure!
 
+First, let's go into the module-1 directory by running `cd ~/metagenomics-workshop/module-1/`.
+
 Start by (1) activating the conda environment for this module and (2) print the help command of a tool called `metabat2`.
 
 <details>
