@@ -70,6 +70,7 @@ Suggestions for additional tools to add welcome!
 - **[plantiSMASH](http://plantismash.secondarymetabolites.org/)**: similar to antiSMASH, but specifically built for plant genomes
 - **[GECCO](https://gecco.embl.de)**, alternative, *de novo* approach to find BGCs 
 - **[DeepBGC](https://github.com/Merck/deepbgc)** deep learning approach for BGC detection
+- **[biosyntheticSPAdes](https://cab.spbu.ru/software/biosyntheticspades/)** reconstructs BGCs in assembly graphs from genomic and metagenomics data sets
 
 ## Class-specific BGC detection
 - **[RiPP RODEO](https://ripp.rodeo/index.html)**
