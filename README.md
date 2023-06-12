@@ -93,9 +93,9 @@ Module 1:<br>
 ```
 conda create -yn module-1
 conda activate module-1
-conda install metabat2
-conda install samtools
-conda install bwa
+conda install -y metabat2
+conda install -y samtools
+conda install -y bwa
 conda deactivate 
 ```
 
@@ -103,8 +103,8 @@ Module 2:<br>
 ```
 conda create -yn module-2
 conda activate module-2
-conda install gtdbtk
-conda install checkm-genome
+conda install -y gtdbtk
+conda install -y checkm-genome
 # To finish setting up CheckM, please run the following to set up the database:
 export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm/data
 echo "export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm/data" >> .bashrc
