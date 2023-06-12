@@ -41,9 +41,9 @@ You can visualize the results by opening ```index.html``` in any web browser. An
 |C1|Epipelagic|*Ca.* Eudoremicrobium taraoceanii|
 |C2|Bathypelagic|*Ca.* Eudoremicrobium malaspinii|
 
-We will compare the BGCs between these different MAGs to see which BGCs are conserved within the phylum. Although several BGC clustering tools are available (see list below), in this workshop we'll use a tool developed in the Ziemert lab: **[clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)**. 
+We will compare the BGCs between these different MAGs to see which BGCs are conserved within the phylum. Although several BGC clustering tools are available (see list below), in this workshop we'll use a tool developed in the Ziemert lab: [clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source). 
 
-6. Install **[clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)**
+6. Install [clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)
 ```
 git clone https://github.com/Helmholtz-HIPS/clustomatic_source
 conda install -c bioconda diamond
@@ -52,7 +52,7 @@ pip3 install -r requirements.txt
 ```
 
 7. Run clust-o-matic on the pre-processed antiSMASH output from *Ca.* Eremiobacterota [representative MAGs](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3/data/eremio_antismash_gbk_output/)  testing out different clustering thresholds. <br>
-**Note:** In order to convert the antiSMASH output you can use available tools or your favorite langauge to convert Genbank files to FASTA format and modify the FASTA headers using the following **[clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)**  convention. 
+**Note:** In order to convert the antiSMASH output you can use available tools or your favorite langauge to convert Genbank files to FASTA format and modify the FASTA headers using the following [clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source) convention. 
 ```
 >BGCNUM_PROTEINNUM
 ```
