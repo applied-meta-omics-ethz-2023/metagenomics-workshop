@@ -80,6 +80,12 @@ conda config --add channels bioconda
 conda install mamba
 mamba install git
 ```
+ 
+* Set up default path for the conda environments (otherwise they will be installed in our home and we will run out of space)
+```
+mkdir -p /nfs/teaching/scratch/$USER/environments/
+conda config --add envs_dirs /nfs/teaching/scratch/$USER/environments/
+```
 
 * Set up three distinct conda environments for the three modules of the workshop as follows:
 
@@ -102,6 +108,7 @@ conda install checkm-genome
 # To finish setting up CheckM, please run the following to set up the database:
 export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm/data
 echo "export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm/data" >> .bashrc
+conda deactivate
 ```
 
 Module 3:<br>
