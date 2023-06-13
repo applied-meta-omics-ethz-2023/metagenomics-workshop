@@ -12,9 +12,9 @@ To estimate genome completeness and contamination you have several options, incl
 
 ### Running commands in the background with `screen`
 
-Running some bioinformatics tools can take time and we cannot always maintain the ssh connection open until they finish. To solve that issue, we can run tasks in so called `screens` that can run in the background and that we can check hours or even days later. To know more, have a look [here](https://kb.iu.edu/d/acuy).
+Running some bioinformatics tools can take time and we cannot always maintain the ssh connection open until they finish. To solve that issue, we can run tasks in so called `screens` that can run in the background and that we can check hours or even days later.
 
-To know more about those, you can have a look [here](). In the meantime you can:
+To know more about screens, you can have a look [here](https://kb.iu.edu/d/acuy). In the meantime you can:
 - Create a screen for module-2 using the command `screen -S module-2`. This will start a new bash session.
 - You can detach this bash session by click simultaneously on `ctrl+a` then `d`.
 - Now any command in the screen `module-2` would be running in the background.
