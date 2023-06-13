@@ -76,3 +76,14 @@ Prompt the help message of `gtdbtk` and try to run the `classify_wf` with 6 thre
   ```
 
 </details>
+
+### Use the different annotations available to you to critically evaluate the different bins that you reconstructed
+
+In addition to completeness and contamination estimates, think about the taxonomic annotations, the genomes sizes and contiguity.
+
+### Additional resources
+
+Some additional resources, tools, papers to go beyond the workshop:
+- https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02393-0
+- https://genome.cshlp.org/content/30/3/315.short 
+- https://merenlab.org/2015/05/11/anvi-refine/ 
