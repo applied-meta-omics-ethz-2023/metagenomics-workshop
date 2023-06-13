@@ -143,6 +143,10 @@ tar -xzf ACIN21-1_SAMN05422137_METAG-bins.tar.gz
 </details>
 
 
-### Exploring the binning results with Anvi'o [optional]
+### Additional resources and optional tasks
 
-Are you done? Is there some time and motivation left? Have a look [here](https://merenlab.org/2016/06/22/anvio-tutorial-v2/) and try to visualise the binning results on your laptop with Anvi'o!
+Are you done?
+
+One option would be to have a look [here](https://merenlab.org/2016/06/22/anvio-tutorial-v2/) and try to visualise the binning results on your laptop with Anvi'o!
+
+You could also try to subset the abundance file and run the binning without abundance correlation to evaluate the benefits of this approach.
