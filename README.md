@@ -112,15 +112,11 @@ conda create -yn module-2
 conda activate module-2
 mamba install -y gtdbtk=2.3.0 checkm-genome=1.2.2
 # ignore the commands to download the database and instead use the following:
-cd /nfs/teaching/scratch/$USER/environments/module-2/share/gtdbtk-2.3.0/
-rm -r db
-ln -s /nfs/teaching/databases/gtdb/data /nfs/teaching/scratch/$USER/environments/module-2/share/gtdbtk-2.3.0/db
-cd ~
-export GTDBTK_DATA_PATH=/nfs/teaching/databases/gtdb/data/
-echo "export GTDBTK_DATA_PATH=/nfs/teaching/databases/gtdb/data/" >> .bashrc
+export GTDBTK_DATA_PATH=/nfs/teaching/databases/gtdb/
+echo "export GTDBTK_DATA_PATH=/nfs/teaching/databases/gtdb/" >> .bashrc
 # Now let's finish setting up CheckM, please run the following to set up the database:
-export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm/data
-echo "export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm/data" >> .bashrc
+export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm
+echo "export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm" >> .bashrc
 conda deactivate
 ```
 
