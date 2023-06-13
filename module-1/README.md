@@ -56,7 +56,7 @@ One thing that you might have noticed is that `metabat2` takes as inputs a conti
 
 ### Generating the abundance file
 
-Here, what we want to do is to (1) map the metagenomic reads to the assembly (to generate a sam file) and (2) use the jgi script to generate the abundance file.
+Here, what we want to do is to (1) map the metagenomic reads to the assembly (to generate a [sam file](https://www.metagenomics.wiki/tools/samtools/bam-sam-file-format)) and (2) use the jgi script to generate the abundance file.
 
 To map the reads, we will use a alignement software called bwa. So let's start with the `bwa`, which you can access by simply typing in `bwa` as a command.
 
