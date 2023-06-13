@@ -8,7 +8,7 @@ So how do we estimated completeness and contamination? The idea is to use univer
 - https://genome.cshlp.org/content/25/7/1043.short
 - https://journals.asm.org/doi/abs/10.1128/msystems.00731-19 
 
-To estimate genome completeness and contimation you have several options, including [CheckM](https://github.com/Ecogenomics/CheckM), Anvi'o or BUSCO. Here, we will use CheckM.
+To estimate genome completeness and contamination you have several options, including [CheckM](https://github.com/Ecogenomics/CheckM), Anvi'o or BUSCO. Here, we will use CheckM.
 
 ### Running commands in the background with `screen`
 
