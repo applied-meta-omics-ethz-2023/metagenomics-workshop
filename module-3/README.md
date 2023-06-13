@@ -84,7 +84,7 @@ Open the file in your preferred program and visualize results e.g., as a heatmap
 8. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you!
 
 # Additional resources and links
-This is a non-exhaustive list focused primarily on tools related to (meta)genomic resources for BGCs. Suggestions for additional tools to add welcome! However, in the interest of space, this list does not include many metabolomic or chemistry-focused natural product databases and analysis tools. 
+This is a non-exhaustive list focused primarily on tools related to (meta)genomic resources for BGCs. Suggestions for additional tools to add welcome! However, in the interest of space, this list does not include many metabolomic or chemistry-focused natural product databases or analysis tools. 
 
 ## General tools for detection of biosynthetic gene clusters (BGCs)
 - **[antiSMASH](https://antismash.secondarymetabolites.org/#!/start)**: **anti**biotics and **S**econdary **M**etabolite **A**nalysis **S**hell, a bacterial biosynthetic gene cluster prediction and characterization tool
