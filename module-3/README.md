@@ -68,7 +68,6 @@ A modifiable python script to do the above reformatting and renaming for clust-o
 From your user directory when you login: <br>
  
 ```
-git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
 cd ~/metagenomics-workshop/module-3/
 python3 scripts/gb2fasta.py data/eremio_antismash_gbk_output/ ~/clustomatic_source/gb2fasta_output.fasta
 cd ~/clustomatic_source/
