@@ -66,7 +66,7 @@ Now run CheckM with 6 threads and make sure it outputs a summary table. Notes th
 
 For a more accurate taxonomic classification, we can turn to GTDBtk.
 
-Prompt the help message of `gtdbtk` and try to run the `classify_wf` with 6 threas (`cpus`).
+Prompt the help message of `gtdbtk` and try to run the `classify_wf` with 6 threads (`cpus`).
 
 <details>
 <summary><i>Click to display the GTDB-Tk command</I></summary>
