@@ -20,7 +20,7 @@ antismash --help-showall
 ```
 3. Next try running antiSMASH on your MAGs from module-2. You cannot run jobs in parallel but you can open [screens](https://kb.iu.edu/d/acuy)
 ```
-antismash yourMAG.fa
+antismash ACIN21-1_SAMN05422137_METAG-metabat2.7.fa --output-dir ACIN21-1_SAMN05422137_METAG-metabat2.7-antismash --output-basename ACIN21-1_SAMN05422137_METAG-metabat2.7 --genefinding-tool prodigal --cpus 6 --minlength 5000 --allow-long-headers --skip-zip-file
 ```
 If you'd like an extra challenge, you can write a script that will run antiSMASH on all your MAGs.
 
