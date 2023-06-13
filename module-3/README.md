@@ -15,6 +15,7 @@
 
 Check the available options:
 ```
+ml antiSMASH
 antismash --help-showall 
 ```
 3. Next try running antiSMASH on your MAGs from module-2. You cannot run jobs in parallel but you can open [screens](https://kb.iu.edu/d/acuy)
