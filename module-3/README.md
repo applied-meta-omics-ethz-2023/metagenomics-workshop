@@ -41,7 +41,10 @@ You can visualize the results by opening ```index.html``` in any web browser. An
 |C1|Epipelagic|*Ca.* Eudoremicrobium taraoceanii|
 |C2|Bathypelagic|*Ca.* Eudoremicrobium malaspinii|
 
-We will compare the BGCs between these different MAGs to see which BGCs are conserved within the phylum. Although several BGC clustering tools are available (see list below), in this workshop we'll use a tool developed in the Ziemert lab: [clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source). 
+We will compare the BGCs between these different MAGs to see which BGCs are conserved within the phylum. Although several BGC clustering tools are available (see list below), in this workshop we'll use a tool developed in the Ziemert lab:clust-omatic.
+
+* [the repo](https://github.com/Helmholtz-HIPS/clustomatic_source)
+* [the paper](https://www.nature.com/articles/s41564-022-01110-2)
 
 6. Install [clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)
 ```
@@ -51,7 +54,7 @@ cd ~/clustomatic_source/
 pip3 install -r requirements.txt
 ```
 
-7. Run clust-o-matic on the pre-processed antiSMASH output from *Ca.* Eremiobacterota [representative MAGs](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3/data/eremio_antismash_gbk_output/)  testing out different clustering thresholds. <br>
+7. Run clust-o-matic on the pre-processed antiSMASH output from *Ca.* Eremiobacterota [representative MAGs](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3/data/eremio_antismash_gbk_output/)  testing out different clustering thresholds between 0 (results in more clusters) and 1 (results in fewer clusters). <br>
 **Note:** In order to convert the antiSMASH output you can use available tools or your favorite langauge to convert Genbank files to FASTA format and modify the FASTA headers using the following [clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source) convention. 
 ```
 >BGCNUM_PROTEINNUM
