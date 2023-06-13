@@ -13,65 +13,78 @@
 
 >The antibiotics and secondary metabolites analysis shell antiSMASH is a comprehensive pipeline for the automated mining of finished or draft genome data for the presence of secondary metabolite biosynthetic gene clusters. antiSMASH is an Open Source software written in Python.
 
-
-Try running antiSMASH --help to check the available options
+Check the available options:
 ```
 antismash --help-showall 
-antismash test_cluster.gbk
 ```
-3. Next try running antiSMASH on your MAGs. You cannot run jobs in parallel but you can open [screens](https://kb.iu.edu/d/acuy)
+3. Next try running antiSMASH on your MAGs from module-2. You cannot run jobs in parallel but you can open [screens](https://kb.iu.edu/d/acuy)
 ```
-antismash yourMAG.gbk
+antismash yourMAG.fa
 ```
-If you'd like an extra challenge, you can write a bash script that will run antiSMASH on all the MAGs.
+If you'd like an extra challenge, you can write a script that will run antiSMASH on all your MAGs.
 
-4. Interpretation and visaulization of results
-If you are not familiar with antiSMASH output, here is an [explanation](https://docs.antismash.secondarymetabolites.org/understanding_output/)
+4. Interpretation and visaulization of antismash results. Check out this [explanation](https://docs.antismash.secondarymetabolites.org/understanding_output/). 
 
+From a local terminal:
 ```
 scp -r yourusername@cousteau.ethz.ch:antismash_output_dir your_local_dir
 ```
-You can visualize the results by opening index.html in any web browser. Anything look interesting? You can dig deeper, or choose to work with your own data trying out some tools in the next section.
+You can visualize the results by opening ```index.html``` in any web browser. Anything look interesting? 
 
-5. Let's dive deeper into one specific clade. In this repo you will find the pre-processed antiSMASH results for 5 representative MAGs from marine clades in the phylum '*Candidatus* Eremiobacterota' as follows:
+5. Let's dive deeper to compare BGC profiles within a specific clade. In module-3 repo you will find the pre-processed [MAGs](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3/data/eremio_rep_mags) and [antiSMASH results](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3/data/eremio_antismash_gbk_output/) for 5 representative marine clades in the phylum '*Candidatus* Eremiobacterota' as follows:
 
 |ID|Ocean region of representative MAG|Scientific name|
 |:---:|:------------:|:----------:|
 |A1|Epipelagic|*Ca.* Amphithoemicrobium indianii|
 |A2|Mesopelagic|*Ca.* Amphithoemicrobium mesopelagicum|
-|A3|Epipelagic|*Ca.* Autonoemicrobium septentrionale|
+|B1|Epipelagic|*Ca.* Autonoemicrobium septentrionale|
 |C1|Epipelagic|*Ca.* Eudoremicrobium taraoceanii|
 |C2|Bathypelagic|*Ca.* Eudoremicrobium malaspinii|
 
-We will compare the BGCs between these different MAGs to see which BGCs are conserved between the clades and which are unique. Among several clustering tools available (see below), in this workshop we'll tool developed in the Ziemert lab, **[Clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)** to cluster the BGCs into groups. For other options (requirng database downloads) see other clustering tools below such as **[BiG-SLiCE](https://github.com/medema-group/bigslice)**.
+We will compare the BGCs between these different MAGs to see which BGCs are conserved within the phylum. Although several BGC clustering tools are available (see list below), in this workshop we'll use a tool developed in the Ziemert lab:clust-omatic.
 
-6. Install clust-o-matic
+* [the repo](https://github.com/Helmholtz-HIPS/clustomatic_source)
+* [the paper](https://www.nature.com/articles/s41564-022-01110-2)
+
+6. Install [clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source)
 ```
 git clone https://github.com/Helmholtz-HIPS/clustomatic_source
 conda install -c bioconda diamond
-cd clustomatic_source
+cd ~/clustomatic_source/
 pip3 install -r requirements.txt
 ```
 
-7. Run clust-o-matic on the pre-processed Eremiobacterota results from antiSMASH. <br>
-**Note:** In order to convert the antiSMASH output you can use available tools or your favorite langauge Genbank to FASTA format and modify the FASTA headers to fit the following format. A script ```genbank2fasta.py``` is provided in the repo.
+7. Run clust-o-matic on the pre-processed antiSMASH output from *Ca.* Eremiobacterota [representative MAGs](https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop/tree/main/module-3/data/eremio_antismash_gbk_output/)  testing out different clustering thresholds between 0 (results in more clusters) and 1 (results in fewer clusters). <br>
+**Note:** In order to convert the antiSMASH output you can use available tools or your favorite langauge to convert Genbank files to FASTA format and modify the FASTA headers to match the following [clust-o-matic](https://github.com/Helmholtz-HIPS/clustomatic_source) convention: 
 ```
->CLUSTERNAME_GENENAME
+>BGCNUM_PROTEINNUM
 ```
-<details>
-<summary><i>Click for instructions:</I></summary>
+A modifiable python script to do the above reformatting and renaming for clust-o-matic is provided here: ```~/metagenomic-workshop/module-3/scripts/gb2fasta.py```. It takes the antismash output directory as the first argument and the name of a new combined FASTA file to be written as the second argument.
 
+<details>
+<summary><i>Click for more detailed instructions:</I></summary>
+ 
+From your user directory when you login: <br>
+ 
 ```
 git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git
-python3 
+cd ~/metagenomics-workshop/module-3/
+python3 scripts/gb2fasta.py data/eremio_antismash_gbk_output/ ~/clustomatic_source/gb2fasta_output.fasta
+cd ~/clustomatic_source/
+python3 clustomatic.py gb2fasta_output.fasta 0.95 > clustomatic_output.txt
+less clustomatic_output.txt
+```  
+On your local terminal: <br>
 ```
-
+scp -r yourusername@cousteau.ethz.ch:clustomatic_source/clustomatic_output.txt your_local_dir
+```
+Open the file in your preferred program and visualize results e.g., as a heatmap.
 </details>
 
-8. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using scp as shown above.
+8. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you!
 
 # Additional resources and links
-This is a non-exhaustive list. Suggestions for additional tools to add welcome!
+This is a non-exhaustive list focused primarily on tools related to (meta)genomic resources for BGCs. Suggestions for additional tools to add welcome! However, in the interest of space, this list does not include many metabolomic or chemistry-focused natural product databases or analysis tools. 
 
 ## General tools for detection of biosynthetic gene clusters (BGCs)
 - **[antiSMASH](https://antismash.secondarymetabolites.org/#!/start)**: **anti**biotics and **S**econdary **M**etabolite **A**nalysis **S**hell, a bacterial biosynthetic gene cluster prediction and characterization tool
@@ -107,4 +120,5 @@ This is a non-exhaustive list. Suggestions for additional tools to add welcome!
 
 ## Useful databases
 - **[MIBiG](https://mibig.secondarymetabolites.org/)**: **M**inimum **I**nformation about a **Bi**osynthetic **G**ene cluster repository, a large, curated repository of biosynthetic gene clusters with annotations and links to relevant publications and/or genomic data
+- **[BiGFAM](https://bigfam.bioinformatics.nl/home)** database for "homologous" groups of BGCs putatively encoding the production of similar metabolites.
 

@@ -1,6 +1,6 @@
 # In this second module, we will go from bins to metagenome-assembled genomes (MAGs)
 
-Metagenomic bins are groups of genomic fragments (contigs). Some of these are microbial genomes, some of these might be viral genomes, and some to these are just fragmetns of one or multiple genomes. The idea is then to evaluate the complenetess and the contamination of those bins to evaluate their quality and only consider as genomes those are are >50% complete and <10% contaminated (although common in the literature, a more conservative threshold may be preferable).
+Metagenomic bins are groups of genomic fragments (contigs). Some of these are microbial genomes, some of these might be viral genomes, and some to these are just fragmetns of one or multiple genomes. The idea is then to evaluate the complenetess and the contamination of those bins to evaluate their quality and only consider as genomes those are are >50% complete and <10% contaminated (although common in the literature, a more conservative threshold may be preferable). See [here](https://www.nature.com/articles/nbt.3893) some community-defined standards.
 
 So how do we estimated completeness and contamination? The idea is to use universal single-copy marker genes. These genes have the desirable behaviour of being expected in all bacterial and/or archaeal genomes, but only once. If you want to read more about those, here are a few papers:
 - https://www.science.org/doi/10.1126/science.1123061
@@ -8,13 +8,13 @@ So how do we estimated completeness and contamination? The idea is to use univer
 - https://genome.cshlp.org/content/25/7/1043.short
 - https://journals.asm.org/doi/abs/10.1128/msystems.00731-19 
 
-To estimate genome completeness and contimation you have several options, including [CheckM](https://github.com/Ecogenomics/CheckM), Anvi'o or BUSCO. Here, we will use CheckM.
+To estimate genome completeness and contamination you have several options, including [CheckM](https://github.com/Ecogenomics/CheckM), Anvi'o or BUSCO. Here, we will use CheckM.
 
 ### Running commands in the background with `screen`
 
-Running some bioinformatics tools can take time and we cannot always maintain the ssh connection open until they finish. To solve that issue, we can run tasks in so called `screens` that can run in the background and that we can check hours or even days later. 
+Running some bioinformatics tools can take time and we cannot always maintain the ssh connection open until they finish. To solve that issue, we can run tasks in so called `screens` that can run in the background and that we can check hours or even days later.
 
-To know more about those, you can have a look [here](). In the meantime you can:
+To know more about screens, you can have a look [here](https://kb.iu.edu/d/acuy). In the meantime you can:
 - Create a screen for module-2 using the command `screen -S module-2`. This will start a new bash session.
 - You can detach this bash session by click simultaneously on `ctrl+a` then `d`.
 - Now any command in the screen `module-2` would be running in the background.
