@@ -1,6 +1,6 @@
 # In this second module, we will go from bins to metagenome-assembled genomes (MAGs)
 
-Metagenomic bins are groups of genomic fragments (contigs). Some of these are microbial genomes, some of these might be viral genomes, and some to these are just fragmetns of one or multiple genomes. The idea is then to evaluate the complenetess and the contamination of those bins to evaluate their quality and only consider as genomes those are are >50% complete and <10% contaminated (although common in the literature, a more conservative threshold may be preferable).
+Metagenomic bins are groups of genomic fragments (contigs). Some of these are microbial genomes, some of these might be viral genomes, and some to these are just fragmetns of one or multiple genomes. The idea is then to evaluate the complenetess and the contamination of those bins to evaluate their quality and only consider as genomes those are are >50% complete and <10% contaminated (although common in the literature, a more conservative threshold may be preferable). See [here](https://www.nature.com/articles/nbt.3893) some community-defined standards.
 
 So how do we estimated completeness and contamination? The idea is to use universal single-copy marker genes. These genes have the desirable behaviour of being expected in all bacterial and/or archaeal genomes, but only once. If you want to read more about those, here are a few papers:
 - https://www.science.org/doi/10.1126/science.1123061
