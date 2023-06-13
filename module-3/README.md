@@ -81,7 +81,7 @@ scp -r yourusername@cousteau.ethz.ch:clustomatic_source/clustomatic_output.txt y
 Open the file in your preferred program and visualize results e.g., as a heatmap.
 </details>
 
-8. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you. Some are relatively straightforward to install using conda while others are recommended to run via the web interface. Your MAGs are relatively small and can also be transferred to your personal computer using scp as shown above.
+8. Choose your own adventure. The idea is to give you unstructured time to allow you to explore topics and tools that are most interesting to you!
 
 # Additional resources and links
 This is a non-exhaustive list focused primarily on tools related to (meta)genomic resources for BGCs. Suggestions for additional tools to add welcome! However, in the interest of space, this list does not include many metabolomic or chemistry-focused natural product databases and analysis tools. 
