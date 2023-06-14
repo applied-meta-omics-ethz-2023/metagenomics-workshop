@@ -46,6 +46,11 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 - type your password<br> 
 - press ENTER <br> 
+ 
+```
+cp ../paolil/.bash_profile
+cp ../paolil/.bashrc
+```
 
 </details>
 
