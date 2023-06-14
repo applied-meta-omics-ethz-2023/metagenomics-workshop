@@ -48,8 +48,8 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 - press ENTER <br> 
  
 ```
-cp ../paolil/.bash_profile
-cp ../paolil/.bashrc
+cp ../paolil/.bash_profile .
+cp ../paolil/.bashrc .
 ```
 
 </details>
