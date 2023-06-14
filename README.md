@@ -67,6 +67,7 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 - ```rm Miniconda3-latest-Linux-x86_64.sh```<br>
 - Install should take ~5min<br>
 
+* Log out and log in again
 * Add conda channels
 ```
 conda config --add channels defaults
