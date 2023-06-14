@@ -46,7 +46,12 @@ This repository has teaching materials for a hands-on **metagenomics** workshop 
 
 - type your password<br> 
 - press ENTER <br> 
- 
+
+If you already installed conda:
+```
+rm -r miniconda3
+```
+Then:
 ```
 cp ../paolil/.bash_profile .
 cp ../paolil/.bashrc .
