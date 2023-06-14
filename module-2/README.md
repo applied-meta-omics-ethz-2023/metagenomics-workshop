@@ -14,10 +14,9 @@ To estimate genome completeness and contamination you have several options, incl
 ```
 ssh yourusername@cousteau.ethz.ch
 conda activate /nfs/teaching/scratch/paolil/environments/module-2/
-# ignore the commands to download the database and instead use the following:
+# Now let's set up the checkm and gtdb databases
 export GTDBTK_DATA_PATH=/nfs/teaching/databases/gtdb/
 echo "export GTDBTK_DATA_PATH=/nfs/teaching/databases/gtdb/" >> .bashrc
-# Now let's finish setting up CheckM, please run the following to set up the database:
 export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm
 echo "export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm" >> .bashrc
 ```
