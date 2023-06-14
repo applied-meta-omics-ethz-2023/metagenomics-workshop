@@ -12,6 +12,7 @@ To estimate genome completeness and contamination you have several options, incl
 
 #### If you have been working locally, try this:
 ```
+ssh yourusername@cousteau.ethz.ch
 export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm
 conda activate /nfs/teaching/scratch/paolil/environments/module-2/
 ```
