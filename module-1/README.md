@@ -77,9 +77,9 @@ We want to use `bwa index` to prepare our reference (the assembly) and then `bwa
   Here, the bwa mem command is combined combined with samtools calls and an in house script (sushicounter) to filter the alignment.
 
   ```
-  fasta="ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz"
-  reads="ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz"
-  bwa mem -a -t 4 $fasta $reads | samtools view -F 4 -h - | sushicounter filter -u -i 0.95 -c 0.8 -a 45 - - | samtools view -bh - | samtools sort -O bam -@ 4 -m 4G - > mapping_file.filtered.sorted.bam
+  $fasta="ACIN21-1_SAMN05422137_METAG.scaffolds.min1000.fasta.gz"
+  $reads="ACIN21-1_SAMN05422137_METAG.m.sub.fq.gz"
+  $bwa mem -a -t 4 $fasta $reads | samtools view -F 4 -h - | sushicounter filter -u -i 0.95 -c 0.8 -a 45 - - | samtools view -bh - | samtools sort -O bam -@ 4 -m 4G - > mapping_file.filtered.sorted.bam
   ```
 
 </details>
