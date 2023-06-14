@@ -10,15 +10,27 @@ So how do we estimated completeness and contamination? The idea is to use univer
 
 To estimate genome completeness and contamination you have several options, including [CheckM](https://github.com/Ecogenomics/CheckM), Anvi'o or BUSCO. Here, we will use CheckM.
 
-#### If you have been working locally, try this:
+### Let's give cousteau another chance!
+
+Connect to cousteau and activate a pre-installed module-2 environments:
 ```
 ssh yourusername@cousteau.ethz.ch
 conda activate /nfs/teaching/scratch/paolil/environments/module-2/
+```
+
+The tools that we want to use in this module need some big databases, but instead of downloading them from scratch we can use the ones already on the server:
+```
 # Now let's set up the checkm and gtdb databases
 export GTDBTK_DATA_PATH=/nfs/teaching/databases/gtdb/
 echo "export GTDBTK_DATA_PATH=/nfs/teaching/databases/gtdb/" >> .bashrc
 export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm
 echo "export CHECKM_DATA_PATH=/nfs/teaching/databases/checkm" >> .bashrc
+```
+
+And before moving forward, we need to make sure the bins are available on cousteau. We can download the data as follows:
+```
+wget https://sunagawalab.ethz.ch/share/paolil/METAGENOMICS-WORKSHOP/ACIN21-1_SAMN05422137_METAG-bins.tar.gz
+tar -xzf ACIN21-1_SAMN05422137_METAG-bins.tar.gz
 ```
 
 ### Running commands in the background with `screen`
@@ -30,20 +42,6 @@ To know more about screens, you can have a look [here](https://kb.iu.edu/d/acuy)
 - You can detach this bash session by click simultaneously on `ctrl+a` then `d`.
 - Now any command in the screen `module-2` would be running in the background.
 - You can resume the screen by simply typing `screen -r module-2`
-
-To get started, in the screen session, activate the environment from module-2, move to the right directory (the module-2 directory) and link the bins folder to this new directory.
-
-<details>
-<summary><i>Click to display the command lines</I></summary>
-
-  ```
-  conda deactivate module-1
-  conda activate module-2
-  cd ~/metagenomics-workshop/module-2
-  ln -s ~/metagenomics-workshop/module-1/ACIN21-1_SAMN05422137_METAG-bins .
-  ```
-
-</details>
 
 ### Evaluate the quality of the bins with CheckM
 
