@@ -1,12 +1,27 @@
 # Module 3: Choose your own adventure
 
+
+### Some tips to sync the data from the server to your laptop
+
+Open a new bash session on your laptop and use `pwd` to know where you are in your file system (for instance go to your Downloads folder with `cd Downloads`).
+
+You can then use rsync to copy files back from cousteau, for instance:
+
+```
+rsync yourusername@cousteau.ethz.ch:~/ACIN21-1_SAMN05422195_METAG-checkm.tsv .
+rsync yourusername@cousteau.ethz.ch:~/ACIN21-1_SAMN05422195_METAG-gtdb/gtdbtk.ar53.summary.tsv .
+rsync yourusername@cousteau.ethz.ch:~/ACIN21-1_SAMN05422195_METAG-gtdb/gtdbtk.bac120.summary.tsv .
+```
+
+
 ### In this third module, we will annotate the reconstructed MAGs to identify biosynthetic gene clusters, enzymes, antibiotic resistance factors of interest. 
 
 0. Clean your conda cache
 ```conda clean -a```
 
-1. Activate the ```module-3``` environment
-```conda activate module-3```
+1. Activate the ```module-3``` environment ```conda activate module-3``` (if you haven't created it yet you can use: ```conda create -yn module-3```)
+
+1'. If you haven't cloned it already, do `git clone https://github.com/applied-meta-omics-ethz-2023/metagenomics-workshop.git`.
 
 2. As a start, we will check antiSMASH is working properly:
 *From the [antiSMASH User Manual](https://docs.antismash.secondarymetabolites.org/#):*
@@ -28,7 +43,7 @@ If you'd like an extra challenge, you can write a script that will run antiSMASH
 
 From a local terminal:
 ```
-scp -r yourusername@cousteau.ethz.ch:antismash_output_dir your_local_dir
+rsync -r yourusername@cousteau.ethz.ch:antismash_output_dir your_local_dir
 ```
 You can visualize the results by opening ```index.html``` in any web browser. Anything look interesting? 
 
