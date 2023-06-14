@@ -73,7 +73,7 @@ We want to use `bwa index` to prepare our reference (the assembly) and then `bwa
 </details>
 
 <details>
-<summary><i>Click here fore some advanced usage of bwa mem</I></summary>
+<summary><i>DO NOT RUN THIS PART :) Just read to understand. Click here fore some advanced usage of bwa mem</I></summary>
   Here, the bwa mem command is combined combined with samtools calls and an in house script (sushicounter) to filter the alignment.
 
   ```
