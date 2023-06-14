@@ -12,7 +12,7 @@ To estimate genome completeness and contamination you have several options, incl
 
 ### Let's give cousteau another chance!
 
-Connect to cousteau and activate a pre-installed module-2 environments:
+Connect to cousteau and activate a pre-installed module-2 environments (this assumes that you have managed to install conda on cousteau, if not, let ust know!):
 ```
 ssh yourusername@cousteau.ethz.ch
 conda activate /nfs/teaching/scratch/paolil/environments/module-2/
