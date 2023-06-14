@@ -10,6 +10,12 @@ So how do we estimated completeness and contamination? The idea is to use univer
 
 To estimate genome completeness and contamination you have several options, including [CheckM](https://github.com/Ecogenomics/CheckM), Anvi'o or BUSCO. Here, we will use CheckM.
 
+#### If you have been working locally, try this:
+```
+export 
+conda activate /nfs/teaching/scratch/paolil/environments/module-2/
+```
+
 ### Running commands in the background with `screen`
 
 Running some bioinformatics tools can take time and we cannot always maintain the ssh connection open until they finish. To solve that issue, we can run tasks in so called `screens` that can run in the background and that we can check hours or even days later.
