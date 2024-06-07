@@ -130,7 +130,7 @@ This is a non-exhaustive list focused primarily on tools related to (meta)genomi
 - **[BiG-SCAPE and CORASON](https://bigscape-corason.secondarymetabolites.org/index.html)** construct BGC sequence similarity networks, group BGCs into gene cluster families, and exploring gene cluster diversity linked to enzyme phylogenies
 
 ## Integration with metabeolomics data
-- **[NPOmix](https://github.com/tiagolbiotech/NPOmix_python) Machine learning methods to link genomic and metabolomic data.
+- **[NPOmix](https://github.com/tiagolbiotech/NPOmix_python)** Machine learning methods to link genomic and metabolomic data.
 - **[NPLinker](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008920)** Software framework to link genomic and metabolomic data.
 
 
