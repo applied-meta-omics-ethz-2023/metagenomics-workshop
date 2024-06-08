@@ -129,14 +129,16 @@ This is a non-exhaustive list focused primarily on tools related to (meta)genomi
 - **[BiG-SLiCE](https://github.com/medema-group/bigslice)**  tool designed to cluster large numbers of BGCs
 - **[BiG-SCAPE and CORASON](https://bigscape-corason.secondarymetabolites.org/index.html)** construct BGC sequence similarity networks, group BGCs into gene cluster families, and exploring gene cluster diversity linked to enzyme phylogenies
 
-## Integration with metabeolomics data
+## Integration with metabeolomics/chemical data
+
 - **[NPOmix](https://github.com/tiagolbiotech/NPOmix_python)** Machine learning methods to link genomic and metabolomic data.
-- **[NPLinker](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1008920)** Software framework to link genomic and metabolomic data.
+- **[NPLinker](https://github.com/NPLinker/nplinker)** Software framework to link genomic and metabolomic data.
+- **[iPRESTO](https://git.wageningenur.nl/bioinformatics/iPRESTO/)** Linking BGC subclusters to natural product substructures
+- **[NERPA](https://github.com/ablab/nerpa)** Specific pipeline for nonribosomal peptides
+- **[MetaMiner](https://ccms-ucsd.github.io/GNPSDocumentation/metaminer/)** Metabologenomic pipeline integrated in GNPS
 
-
-## Integration with gene expression datasets
+## Integration with gene expression
 - **[BiG-MAP](https://github.com/medema-group/BiG-MAP)** a bioinformatic tool to profile abundance and expression levels of gene clusters across metagenomic and metatranscriptomic data
-
 
 ## Useful databases
 - **[MIBiG](https://mibig.secondarymetabolites.org/)**: **M**inimum **I**nformation about a **Bi**osynthetic **G**ene cluster repository, a large, curated repository of biosynthetic gene clusters with annotations and links to relevant publications and/or genomic data
