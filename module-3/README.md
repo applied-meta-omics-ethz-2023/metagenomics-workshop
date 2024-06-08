@@ -139,10 +139,12 @@ This is a non-exhaustive list focused primarily on tools related to (meta)genomi
 
 ## Integration with gene expression
 - **[BiG-MAP](https://github.com/medema-group/BiG-MAP)** a bioinformatic tool to profile abundance and expression levels of gene clusters across metagenomic and metatranscriptomic data
-- More from Medema lab and others!
+- **[LogoMotif](https://logomotif.bioinformatics.nl/)** Detection of transcription factor binding sites including their detection and annotation in BGCs, espeically focusing on Actinobacteria
+- More from Medema lab and others coming soon!
   
-## Useful databases
+## Other useful databases
 - **[MIBiG](https://mibig.secondarymetabolites.org/)**: **M**inimum **I**nformation about a **Bi**osynthetic **G**ene cluster repository, a large, curated repository of biosynthetic gene clusters with annotations and links to relevant publications and/or genomic data
-- **[BiGFAM](https://bigfam.bioinformatics.nl/home)** database for "homologous" groups of BGCs putatively encoding the production of similar metabolites.
-- **[JGI Secondary Metabolism Collaboratory](https://smc.jgi.doe.gov/)** JGI’s Secondary Metabolites Science Program including BGCs from over 1.3 million genomes. 
+- **[BiGFAM](https://bigfam.bioinformatics.nl/home)** database for "homologous" groups of BGCs putatively encoding the production of similar metabolites
+- **[JGI Secondary Metabolism Collaboratory](https://smc.jgi.doe.gov/)** JGI’s Secondary Metabolites Science Program including BGCs from over 1.3 million genomes
+- Many more!
 
