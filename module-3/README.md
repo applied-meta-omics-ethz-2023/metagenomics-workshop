@@ -128,8 +128,7 @@ This is a non-exhaustive list focused primarily on tools related to (meta)genomi
 - **[BiG-SLiCE](https://github.com/medema-group/bigslice)**  tool designed to cluster large numbers of BGCs
 - **[BiG-SCAPE and CORASON](https://bigscape-corason.secondarymetabolites.org/index.html)** construct BGC sequence similarity networks, group BGCs into gene cluster families, and exploring gene cluster diversity linked to enzyme phylogenies
 
-## Integration with metabeolomics/chemical data
-
+## Integration with metabolomics data
 - **[NPOmix](https://github.com/tiagolbiotech/NPOmix_python)** Machine learning methods to link genomic and metabolomic data.
 - **[NPLinker](https://github.com/NPLinker/nplinker)** Software framework to link genomic and metabolomic data.
 - **[iPRESTO](https://git.wageningenur.nl/bioinformatics/iPRESTO/)** Linking BGC subclusters to natural product substructures
