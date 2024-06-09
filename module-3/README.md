@@ -129,15 +129,16 @@ This is a non-exhaustive list focused primarily on tools related to (meta)genomi
 - **[BiG-SCAPE and CORASON](https://bigscape-corason.secondarymetabolites.org/index.html)** construct BGC sequence similarity networks, group BGCs into gene cluster families, and exploring gene cluster diversity linked to enzyme phylogenies
 
 ## Integration with metabolomics data
-- **[NPOmix](https://github.com/tiagolbiotech/NPOmix_python)** Machine learning methods to link genomic and metabolomic data.
-- **[NPLinker](https://github.com/NPLinker/nplinker)** Software framework to link genomic and metabolomic data.
+- **[NPOmix_python](https://github.com/tiagolbiotech/NPOmix_python)** Machine learning methods to link genomic and metabolomic data
+- **[NPOmix online tutorial](https://youtu.be/T2IFxe8Msd8?si=o63CRxP-q4juZ1sw)** NPOmix online tutorial
+- **[NPLinker](https://github.com/NPLinker/nplinker)** Software framework to link genomic and metabolomic data
 - **[iPRESTO](https://git.wageningenur.nl/bioinformatics/iPRESTO/)** Linking BGC subclusters to natural product substructures
 - **[NERPA](https://github.com/ablab/nerpa)** Specific pipeline for nonribosomal peptides
 - **[MetaMiner](https://ccms-ucsd.github.io/GNPSDocumentation/metaminer/)** Metabologenomic pipeline integrated in GNPS
 
 ## Integration with gene expression
 - **[BiG-MAP](https://github.com/medema-group/BiG-MAP)** a bioinformatic tool to profile abundance and expression levels of gene clusters across metagenomic and metatranscriptomic data
-- **[LogoMotif](https://logomotif.bioinformatics.nl/)** Detection of transcription factor binding sites including their detection and annotation in BGCs, espeically focusing on Actinobacteria
+- **[LogoMotif](https://logomotif.bioinformatics.nl/)** Detection of transcription factor binding sites including their detection and annotation in BGCs, especially focusing on Actinobacteria
 - More from Medema lab and others coming soon!
   
 ## Other useful databases
