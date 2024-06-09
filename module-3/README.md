@@ -135,6 +135,7 @@ This is a non-exhaustive list focused primarily on tools related to (meta)genomi
 - **[iPRESTO](https://git.wageningenur.nl/bioinformatics/iPRESTO/)** Linking BGC subclusters to natural product substructures
 - **[NERPA](https://github.com/ablab/nerpa)** Specific pipeline for nonribosomal peptides
 - **[MetaMiner](https://ccms-ucsd.github.io/GNPSDocumentation/metaminer/)** Metabologenomic pipeline integrated in GNPS
+- **[MAGI](https://github.com/biorack/magi)** Integrated metabolite–gene association score using a biochemical reaction network
 
 ## Integration with gene expression
 - **[BiG-MAP](https://github.com/medema-group/BiG-MAP)** a bioinformatic tool to profile abundance and expression levels of gene clusters across metagenomic and metatranscriptomic data
