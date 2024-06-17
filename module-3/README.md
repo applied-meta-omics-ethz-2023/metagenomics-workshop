@@ -1,4 +1,4 @@
-f# Module 3: Choose your own adventure
+# Module 3: Choose your own adventure
 
 
 ### Some tips to sync the data from the server to your laptop
@@ -100,9 +100,6 @@ Open the file in your preferred program and visualize results e.g., as a heatmap
 
 # Additional resources and links
 This is a non-exhaustive list focused primarily on tools related to metagenomics analysis and 'omics data integration for secondary metabolsm. It is overlapping but including updated links from the [Secondary Metabolites Bioinformatics Portal](https://www.secondarymetabolites.org/)!
-
-## Slides from the 2024 Microbial Secondary Metabolites in Microbiomes workshop
--**[Link to slides](https://drive.google.com/file/d/1J2QIa3t8zkVbx_FBxjuStA0lqDrQLAi_/view?usp=drive_link)**
 
 ## General tools for detection of biosynthetic gene clusters (BGCs)
 - **[antiSMASH](https://antismash.secondarymetabolites.org/#!/start)**: **anti**biotics and **S**econdary **M**etabolite **A**nalysis **S**hell, a bacterial biosynthetic gene cluster prediction and characterization tool
